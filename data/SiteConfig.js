@@ -5,7 +5,7 @@ module.exports = {
   siteDescription: 'Nicholas Gebhart is a full stack software developer',
   links: [
     {
-      name: 'About me',
+      name: 'About',
       to: '/me/',
     },
     {
