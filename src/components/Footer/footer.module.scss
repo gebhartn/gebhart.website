@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+}
+
+.logo {
+  height: 25px;
+  width: 25px;
+  max-height: 25px;
+}
+
+.logo-container {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 50%;
+
+  .logo {
+    margin: 0 2rem 0 0;
+    padding: 0;
+  }
+}
