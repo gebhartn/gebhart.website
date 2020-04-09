@@ -1,17 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import config from '../../../data/SiteConfig'
-import icon from '../../images/favicon.webp'
-import {
-  nav,
-  navContainer,
-  brand,
-  favicon,
-  text,
-  links,
-  cta,
-  scroll,
-} from './navigation.module.scss'
+import { links as navLinks } from '../../../data/SiteConfig'
+import { nav, navContainer, links, scroll } from './navigation.module.scss'
 
 export default () => {
   const [scrolled, setScrolled] = React.useState(false)
@@ -28,15 +18,9 @@ export default () => {
   return (
     <nav className={scrolled ? `${nav} ${scroll}` : nav}>
       <div className={navContainer}>
-        <div className={brand}>
-          <Link to="/">
-            <img src={icon} className={favicon} alt="Computer" />
-            <span className={text}>{config.siteTitle}</span>
-          </Link>
-        </div>
         <div className={links}>
-          {config.links.map(({ name, to }) => (
-            <Link key={name} to={to}>
+          {navLinks.map(({ title, name, to }) => (
+            <Link title={title} key={name} to={to}>
               {name}
             </Link>
           ))}
