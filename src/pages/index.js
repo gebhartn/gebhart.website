@@ -8,6 +8,6 @@ export default () => (
   <Layout>
     <SEO />
     <Helmet title={`${config.siteTitle} - Full Stack Software Developer`} />
-    <div>Hello World!</div>
+    <div style={{ height: '2000px' }}>Hello World!</div>
   </Layout>
 )
