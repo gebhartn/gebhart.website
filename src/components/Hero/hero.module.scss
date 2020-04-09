@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.face {
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  max-height: 85px;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  font-weight: 700;
+  margin: 1.2rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.sub-heading {
+  font-weight: 400;
+  color: #373737;
+  opacity: 0.5;
+  font-size: 1.2rem;
+}
