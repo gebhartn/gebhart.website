@@ -13,17 +13,17 @@ module.exports = {
     {
       name: 'About',
       to: '/me/',
-      title: 'Who?',
+      title: 'About me',
     },
     {
       name: 'Blog',
       to: '/blog/',
-      title: 'What?',
+      title: 'Blog',
     },
     {
       name: 'Contact',
       to: '/contact/',
-      title: 'Where?',
+      title: 'Contact',
     },
   ],
 }
