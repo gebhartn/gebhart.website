@@ -635,3 +635,11 @@ pre tt:after {
 .content {
   flex-grow: 1;
 }
+
+html {
+  overflow: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+  width: 0px;
+}
