@@ -1,10 +1,17 @@
 import React from 'react'
-import { link, title, buttons, button, each } from './card.module.scss'
+import {
+  projects,
+  each,
+  link,
+  title,
+  buttons,
+  button,
+} from './project.module.scss'
 
-export default ({ projects }) => {
+export default ({ projects: content }) => {
   return (
     <section className={projects}>
-      {projects.map((project) => (
+      {content.map((project) => (
         <div className={each} key={project.title}>
           <h2>
             <a
@@ -24,7 +31,7 @@ export default ({ projects }) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Source
+              Code
             </a>
             {project.path && (
               <a
@@ -33,7 +40,7 @@ export default ({ projects }) => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Link
+                Demo
               </a>
             )}
           </div>
