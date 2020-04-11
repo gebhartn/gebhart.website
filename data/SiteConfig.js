@@ -6,11 +6,6 @@ module.exports = {
   siteDescription: 'Nicholas Gebhart is a full stack software developer',
   links: [
     {
-      name: 'Home',
-      to: '/',
-      title: 'Home',
-    },
-    {
       name: 'About',
       to: '/me/',
       title: 'About me',
@@ -21,9 +16,9 @@ module.exports = {
       title: 'Blog',
     },
     {
-      name: 'Contact',
-      to: '/contact/',
-      title: 'Contact',
+      name: 'Work',
+      to: '/work/',
+      title: 'Work',
     },
   ],
 }

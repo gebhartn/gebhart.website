@@ -9,11 +9,17 @@ I'm <span>Nicholas Gebhart</span>, a full stack software developer, writer, and 
 My goal is to create new and wonderful things and share the things I learn with other like-minded individuals.
 
 ## Recent Projects
- - [Mission Control]() - Project Management SaaS
- - [LS-8]() - An 8-bit computer emulator
- - [Safe Routes]() - Dashboard to avoid car accidents
- - [Salty Hacker]() - Hackernews comment sentiment analysis
- - [Werewolf]() - Discord bot to host [The Werewolves](https://en.wikipedia.org/wiki/Mafia_(party_game))
+ - [Mission Control]() — Project Management tool
+
+ - [LS-8]() — 8-bit computer emulator
+
+ - [Safe Routes]() — Car crash statistics dashboard
+
+ - [Salty Hacker]() — Hackernews comment sentiment analysis
+
+ - [Werewolf]() — Discord bot to host [The Werewolves][2]
+
+[2]: https://en.wikipedia.org/wiki/Mafia_(party_game)
 
 ## Fun facts
 
@@ -33,7 +39,7 @@ My goal is to create new and wonderful things and share the things I learn with 
  - **Theme**: [Debris]()
  - **Notes**: [Markdown & Git]()
 
-## Links, contact, info
+## Contact me
  - [Github](https://github.com/gebhartn)
  - [Resume](/resume)
  - [Twitter](https://twitter.com/realngebhart)
