@@ -13,8 +13,6 @@ import {
 } from './navigation.module.scss'
 
 export default () => {
-  const globalWindow = typeof window !== 'undefined' && window
-  const path = globalWindow ? globalWindow.location.pathname : '/'
   const [scrolled, setScrolled] = React.useState(false)
 
   const scrollBar = () => {
@@ -41,13 +39,11 @@ export default () => {
     <>
       <nav className={scrolled ? `${nav} ${scroll}` : nav}>
         <div className={navContainer}>
-          {path !== '/' ? (
-            <div className={brand}>
-              <Link to="/">
-                <span className={text}>Nicholas Gebhart</span>
-              </Link>
-            </div>
-          ) : null}
+          <div className={brand}>
+            <Link to="/">
+              <span className={text}>Nicholas Gebhart</span>
+            </Link>
+          </div>
           <div className={links}>
             {navLinks.map(({ title, name, to }) => (
               <Link title={title} key={name} to={to}>
