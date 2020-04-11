@@ -14,7 +14,7 @@ import {
 
 export default () => {
   const globalWindow = typeof window !== 'undefined' && window
-  const path = globalWindow.location.pathname
+  const path = globalWindow && globalWindow.location.pathname
   const [scrolled, setScrolled] = React.useState(false)
 
   const scrollBar = () => {
