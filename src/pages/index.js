@@ -19,7 +19,7 @@ export default () => (
         <Card content={projects} />
       </section>
       <section className={section}>
-        <h2>Recent Articles</h2>
+        <h2>Blog Posts</h2>
         <Card content={projects} />
       </section>
     </div>
