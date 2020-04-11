@@ -16,18 +16,18 @@ export default () => (
           rel="noopener noreferrer"
         />
       </a>
-      <a href="https://www.gatsbyjs.org" title="Powered by Gatsby">
+      <a href="https://www.netlify.com" title="Distributed by Netlify">
         <img
-          src={gatsby}
+          src={netlify}
           alt="Github Logo"
           className={logo}
           target="_blank"
           rel="noopener noreferrer"
         />
       </a>
-      <a href="https://www.netlify.com" title="Distributed by Netlify">
+      <a href="https://www.gatsbyjs.org" title="Powered by Gatsby">
         <img
-          src={netlify}
+          src={gatsby}
           alt="Github Logo"
           className={logo}
           target="_blank"
