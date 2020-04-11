@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Layout from '../layout'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
-import Card from '../components/Card'
+import Project from '../components/Project'
 import { siteTitle } from '../../data/SiteConfig'
 import projects from '../../data/projects'
 import { container, section } from './index.module.scss'
@@ -16,12 +16,12 @@ export default () => (
       <Hero />
       <section className={section}>
         <h2>Recent Projects</h2>
-        <Card content={projects} />
+        <Project projects={projects} />
       </section>
-      <section className={section}>
-        <h2>Blog Posts</h2>
-        <Card content={projects} />
-      </section>
+      {/* <section className={section}> */}
+      {/*   <h2>Blog Posts</h2> */}
+      {/*   <Card content={projects} /> */}
+      {/* </section> */}
     </div>
   </Layout>
 )
