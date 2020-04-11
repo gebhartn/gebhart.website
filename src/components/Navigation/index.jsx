@@ -13,7 +13,8 @@ import {
 } from './navigation.module.scss'
 
 export default () => {
-  const path = window.location.pathname
+  const globalWindow = typeof window !== 'undefined' && window
+  const path = globalWindow.location.pathname
   const [scrolled, setScrolled] = React.useState(false)
 
   const scrollBar = () => {
