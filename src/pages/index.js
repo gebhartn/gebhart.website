@@ -6,7 +6,7 @@ import Hero from '../components/Hero'
 import Project from '../components/Project'
 import { siteTitle } from '../../data/SiteConfig'
 import projects from '../../data/projects'
-import { container, section } from './index.module.scss'
+import { container, section, titleText } from './index.module.scss'
 
 export default () => (
   <Layout>
@@ -15,13 +15,9 @@ export default () => (
     <div className={container}>
       <Hero />
       <section className={section}>
-        <h2>Recent Projects</h2>
+        <h2 className={titleText}>Recent Projects</h2>
         <Project projects={projects} />
       </section>
-      {/* <section className={section}> */}
-      {/*   <h2>Blog Posts</h2> */}
-      {/*   <Card content={projects} /> */}
-      {/* </section> */}
     </div>
   </Layout>
 )
