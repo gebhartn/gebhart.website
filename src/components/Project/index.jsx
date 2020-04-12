@@ -11,32 +11,32 @@ import {
 export default ({ projects: content }) => {
   return (
     <section className={projects}>
-      {content.map((project) => (
-        <div className={each} key={project.title}>
+      {content.map(({ node }) => (
+        <div className={each} key={node.frontmatter.title}>
           <h2>
             <a
               className={link}
-              href={project.source}
+              href={node.frontmatter.source}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className={title}>{project.title}</div>
+              <div className={title}>{node.frontmatter.title}</div>
             </a>
           </h2>
-          <p>{project.description}</p>
+          <p>{node.frontmatter.description}</p>
           <div className={buttons}>
             <a
               className={button}
-              href={project.source}
+              href={node.frontmatter.source}
               target="_blank"
               rel="noopener noreferrer"
             >
               Code
             </a>
-            {project.path && (
+            {node.frontmatter.path && (
               <a
                 className={button}
-                href={project.path}
+                href={node.frontmatter.path}
                 target="_blank"
                 rel="noopener noreferrer"
               >

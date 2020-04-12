@@ -1,0 +1,85 @@
+.projects {
+  .each {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+  }
+
+  h2 {
+    font-size: 1rem;
+    border-bottom: none;
+    margin: 0 1rem 0 0;
+    font-weight: 400;
+    color: #373737;
+    opacity: 0.8;
+    padding: 0;
+    min-width: 110px;
+
+    a {
+      display: flex;
+      color: #373737;
+      align-items: center;
+    }
+  }
+
+  p {
+    display: none;
+    color: #373737;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .buttons {
+    display: flex;
+    align-items: center;
+  }
+  .button {
+    margin-left: 0.5rem;
+    padding: 0 0.25rem;
+    font-size: 1rem;
+    color: rgba(235, 41, 140, 1);
+  }
+}
+
+@media (min-width: 620px) {
+  .projects {
+    .each {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.25rem 0;
+      border-bottom: 1px solid #eee;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+
+    h2 {
+      color: #373737;
+      width: 220px;
+      min-width: 220px;
+      max-width: 220px;
+      font-size: 1rem;
+      margin-right: 1rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    p {
+      color: #373737;
+      opacity: 0.5;
+      display: block;
+      flex: 1;
+      margin: 0 1rem 0 0;
+      font-size: 0.9rem;
+    }
+
+    .button {
+      color: #373737;
+      padding: 0 0.5rem;
+      font-size: 0.9rem;
+      color: rgba(235, 41, 140, 1);
+    }
+  }
+}
