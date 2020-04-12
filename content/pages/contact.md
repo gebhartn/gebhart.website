@@ -1,5 +1,6 @@
 ---
 path: "/contact"
+date: "2020-04-11"
 title: "Contact"
 template: "generic"
 ---

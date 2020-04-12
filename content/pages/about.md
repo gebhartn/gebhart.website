@@ -1,5 +1,6 @@
 ---
 path: "/me"
+date: "2020-04-11"
 title: "About me"
 template: "generic"
 ---
