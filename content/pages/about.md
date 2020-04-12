@@ -4,9 +4,9 @@ title: "About me"
 template: "generic"
 ---
 
-I'm <span>Nicholas Gebhart</span>, a full stack software developer, writer, and a former beer industry professional. I am always looking for something new and exciting to work on, and to write about the things I've learned along the way.
+Hello, I'm Nicholas Gebhart. I'm a full stack software developer currently based out of Southern California. I spend quite a lot of time at the computer reading and writing about the things I am passionate about.
 
-My goal is to create new and wonderful things and share the things I learn with other like-minded individuals.
+I am setting out to document and share the things that I've learned in my journey as a software developer and technical writer. I want to share my journey as a bootcamp graduate and obsessive autodidact with the entire internet, and this is where I'll do it!
 
 ## Recent Projects
  - [Mission Control]() — Project Management tool
@@ -21,23 +21,13 @@ My goal is to create new and wonderful things and share the things I learn with 
 
 [2]: https://en.wikipedia.org/wiki/Mafia_(party_game)
 
-## Fun facts
-
- - Full stack software developer & computer dweeb
- - Loves learning about functional programming
- - Formerly worked in the beer industry as a salesman
- - Consumes entire gallons of tea and coffee daily
- - Low-key master chef with strong opinions about pasta
- - Currently playing Morrowind and Baldur's Gate II
- - Burning desire to meet every cat on the planet
-
 ## Tools
  - **Computer**: Dell XPS 13
  - **OS**: Arch Linux
- - **Dev Environment**: [Dotfiles]()
- - **Editor**: [Neovim]()
- - **Theme**: [Debris]()
- - **Notes**: [Markdown & Git]()
+ - **Dev Environment**: [Dotfiles](https://github.com/gebhartn/Dotfiles)
+ - **Editor**: [Neovim](https://github.com/gebhartn/Dotfiles/blob/master/.config/nvim/init.vim)
+ - **Theme**: [Debris](https://github.com/gebhartn/Dotfiles/blob/master/.config/nvim/colors/debris.vim)
+ - **Notes**: [Markdown & Git](https://github.com/gebhartn/Dotfiles/blob/master/.config/prompt/aliasrc#L56)
 
 ## Contact me
  - [Github](https://github.com/gebhartn)
