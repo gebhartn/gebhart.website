@@ -6,7 +6,7 @@ template: "generic"
 
 Hello, I'm Nicholas Gebhart. I'm a full stack software developer currently based out of Southern California. I spend quite a lot of time at the computer reading and writing about the things I am passionate about.
 
-I am setting out to document and share the things that I've learned in my journey as a software developer and technical writer. I want to share my journey as a bootcamp graduate and obsessive autodidact with the entire internet, and this is where I'll do it!
+I am setting out to document and share the things that I've learned in my journey as a software developer and technical writer. My goal is to inspire others and to learn through teaching, so that I continue to grow as a developer and technical human being.
 
 ## Recent Projects
  - [Mission Control]() — Project Management tool
