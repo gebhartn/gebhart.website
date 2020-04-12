@@ -3,7 +3,7 @@ export default [
     title: 'Mission Control',
     source: 'https://github.com/Lambda-School-Labs/mission-control-fe',
     path: 'stage.missionctrl.dev',
-    description: 'Project management anayltics & dashboard',
+    description: 'Project management software',
   },
   {
     title: 'LS-8',
@@ -15,13 +15,13 @@ export default [
     title: 'Safe Routes',
     source: '',
     path: '',
-    description: 'Car crash statistics & dashboard',
+    description: 'Car crash statistics and dashboard',
   },
   {
     title: 'Salty Hacker',
     source: '',
     path: '',
-    description: 'Sentiment analysis of hackernews comments',
+    description: 'Hackernews comments by saltiness',
   },
   {
     title: 'Werewolf',

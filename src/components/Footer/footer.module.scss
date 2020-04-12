@@ -13,13 +13,8 @@
 
 .logo-container {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   display: flex;
-  width: 30%;
-
-  .logo {
-    margin: 0 2rem 0 0;
-    padding: 0;
-  }
+  width: 200px;
 }
