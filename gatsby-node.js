@@ -3,6 +3,7 @@ const path = require('path')
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
   const generic = path.resolve(`src/templates/generic.js`)
+  const post = path.resolve(`src/templates/post.js`)
 
   const result = await graphql(`
     {
@@ -11,6 +12,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           node {
             frontmatter {
               path
+              template
             }
           }
         }
@@ -23,10 +25,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.frontmatter.path,
-      component: generic,
-      context: {},
-    })
+    if (node.frontmatter.template === `generic`) {
+      createPage({
+        path: node.frontmatter.path,
+        component: generic,
+        context: {},
+      })
+    }
+
+    if (node.frontmatter.template === `post`) {
+      createPage({
+        path: node.frontmatter.path,
+        component: post,
+        context: {},
+      })
+    }
   })
 }
