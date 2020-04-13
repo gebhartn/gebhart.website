@@ -3,10 +3,12 @@ module.exports = {
     title: `Nicholas Gebhart`,
     description: `Nicholas Gebhart is a full stack software developer`,
     author: `Nicholas Gebhart`,
+    siteUrl: `https://nicholasgebhart.com`,
   },
   plugins: [
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-feed`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
