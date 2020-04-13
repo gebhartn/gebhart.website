@@ -1,8 +1,14 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import github from '../../images/github.png'
 import netlify from '../../images/netlify.svg'
 import gatsby from '../../images/gatsby.svg'
-import { footer, logo, logoContainer } from './footer.module.scss'
+import {
+  footer,
+  logo,
+  logoContainer,
+  linksContainer,
+} from './footer.module.scss'
 
 export default () => (
   <footer className={footer}>
@@ -34,6 +40,9 @@ export default () => (
           rel="noopener noreferrer"
         />
       </a>
+    </div>
+    <div className={linksContainer}>
+      <Link to="/rss.xml">RSS</Link>
     </div>
   </footer>
 )
