@@ -19,6 +19,7 @@
   width: 200px;
   max-width: 200px;
   min-width: 200px;
+  padding: 0 0.5rem;
 }
 
 .links-container {
@@ -28,8 +29,8 @@
 
   a {
     color: rgba(55, 55, 55, 0.69);
-    padding-right: 9px;
     transition: color 0.3s ease;
+    padding: 0 0.5rem;
 
     &:hover {
       color: rgba(55, 55, 55, 1);
@@ -40,6 +41,6 @@
 @media (min-width: 620px) {
   .footer {
     height: 100px;
-    margin-bottom: 80px;
+    margin: 40px 0 80px;
   }
 }
