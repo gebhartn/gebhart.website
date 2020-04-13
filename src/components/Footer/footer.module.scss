@@ -27,12 +27,12 @@
   display: flex;
 
   a {
-    color: rgba(55, 55, 55, 0.3);
+    color: rgba(55, 55, 55, 0.5);
     padding-right: 9px;
     transition: color 0.3s ease;
 
     &:hover {
-      color: rgba(55, 55, 55, 0.6);
+      color: rgba(55, 55, 55, 1);
     }
   }
 }

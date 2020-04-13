@@ -2,20 +2,15 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
-import SEO from '../components/SEO'
-import config from '../../data/SiteConfig'
+import { siteTitle } from '../../data/SiteConfig'
 import { container, pageHeader, page } from './generic.module.scss'
 
-export default ({ data }) => {
-  const { markdownRemark } = data
+export default ({ data: { markdownRemark } }) => {
   const { frontmatter, html } = markdownRemark
 
   return (
     <Layout>
-      <SEO />
-      <Helmet>
-        <title>{`${frontmatter.title} - ${config.siteTitle}`}</title>
-      </Helmet>
+      <Helmet title={`${siteTitle} - Full Stack Software Developer`} />
       <div className={container}>
         <section>
           <header className={pageHeader}>

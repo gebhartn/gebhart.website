@@ -1,8 +1,8 @@
 ---
-path: "/resume"
-date: "2020-04-12"
-title: "Nicholas Gebhart"
-template: "generic"
+path: '/resume'
+date: '2020-04-12'
+title: 'Nicholas Gebhart'
+template: 'generic'
 ---
 
 Highly motivated full stack software developer
@@ -21,13 +21,11 @@ Created and maintained a network of client relationships to sell beer. Duties in
 
 ## Projects
 
-
 #### [Mission Control]() — Program Management Software
 
 Worked on a team of five developers to build a rich GraphQL backend, integrate OKTA authentication, and Dockerize project with initialization scripts for future teams. Built entire greenfield API and role-based note-taking feature with Sendgrid email integration, all features shipped full-stack. AGILE environment.
 
 > React, GraphQL, Prisma, Docker, OKTA, AWS
-
 
 #### [Safe Routes]() — Intersection Safety Dashboard
 
@@ -38,6 +36,7 @@ Colloborated on a team of three front-end developers to integrate client-side fo
 ---
 
 ## Skills & Languages
+
 <style type='text/css' rel='stylesheet'>
 .skills {
 	display: flex;
@@ -48,27 +47,26 @@ Colloborated on a team of three front-end developers to integrate client-side fo
 <div class="skills">
 <div>
 
- - JavaScript
- - React
- - Redux
- - CSS
- - HTML
- - Node
- - AGILE development
+- JavaScript
+- React
+- Redux
+- CSS
+- HTML
+- Node
+- AGILE development
 </div>
 <div>
 
- - Python
- - Express
- - GraphQL
- - Testing
- - Linux
- - Docker
- - Vim
+- Python
+- Express
+- GraphQL
+- Testing
+- Linux
+- Docker
+- Vim
 
 </div>
 </div>
-
 
 ---
 

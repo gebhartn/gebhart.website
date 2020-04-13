@@ -7,13 +7,15 @@
 A way to show off the great products and people I work with, and document my experiences learning to write software and grow as a human bean.
 
 ## Features
- - React
- - Gatsby
- - Sass
- - Blog posts and views written in Markdown
+
+- React
+- Gatsby
+- Sass
+- Blog posts and views written in Markdown
 
 ## Author
- - [Nicholas Gebhart](https://nicholasgebhart.com)
+
+- [Nicholas Gebhart](https://nicholasgebhart.com)
 
 ## License
 

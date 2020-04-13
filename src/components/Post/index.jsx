@@ -9,10 +9,10 @@ import {
   button,
 } from './post.module.scss'
 
-export default ({ posts: content }) => {
+export default ({ posts }) => {
   return (
     <section className={projects}>
-      {content.map(({ node }) => (
+      {posts.map(({ node }) => (
         <div className={each} key={node.frontmatter.title}>
           <h2>
             <Link className={link} to={node.frontmatter.path}>

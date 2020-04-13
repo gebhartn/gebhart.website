@@ -2,7 +2,6 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
-import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import Project from '../components/Project'
 import Post from '../components/Post'
@@ -15,7 +14,6 @@ export default ({ data: { posts, projects } }) => {
 
   return (
     <Layout>
-      <SEO />
       <Helmet title={`${siteTitle} - Full Stack Software Developer`} />
       <div className={container}>
         <Hero />

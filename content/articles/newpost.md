@@ -1,8 +1,8 @@
 ---
-date: "2019-04-12"
-title: "This is a TEST"
-template: "post"
-path: "/real-new-blost-post"
+date: '2019-04-12'
+title: 'This is a TEST'
+template: 'post'
+path: '/real-new-blost-post'
 ---
 
 Actual fake content with some length to check the read time

@@ -20,7 +20,7 @@ export default () => {
     const windowScroll = body.scrollTop || documentElement.scrollTop
     const height = documentElement.scrollHeight - documentElement.clientHeight
     const isScrolled = (windowScroll / height) * 100
-    document.getElementById('bar').style.width = `${isScrolled}%`
+    document.getElementById(`bar`).style.width = `${isScrolled}%`
   }
 
   const handleScroll = () => {
@@ -30,9 +30,9 @@ export default () => {
   }
 
   React.useEffect(() => {
-    window.addEventListener('scroll', handleScroll)
+    window.addEventListener(`scroll`, handleScroll)
 
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => window.removeEventListener(`scroll`, handleScroll)
   })
 
   return (
