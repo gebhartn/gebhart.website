@@ -42,7 +42,14 @@ export default () => (
       </a>
     </div>
     <div className={linksContainer}>
-      <Link to="/rss.xml">RSS</Link>
+      <Link
+        to="/rss.xml"
+        title="RSS feed"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        RSS
+      </Link>
     </div>
   </footer>
 )
