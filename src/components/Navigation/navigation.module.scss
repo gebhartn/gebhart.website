@@ -32,12 +32,6 @@
     font-weight: 500;
     font-size: 1.15rem;
   }
-
-  .text {
-    &::before {
-      content: 'NG';
-    }
-  }
 }
 
 .nav-container {
@@ -101,9 +95,6 @@
       }
       .text {
         display: block;
-        &::before {
-          content: 'Nicholas Gebhart';
-        }
       }
     }
 

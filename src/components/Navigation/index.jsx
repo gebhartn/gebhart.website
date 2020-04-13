@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import { useMediaQuery } from 'react-responsive'
 import { links as navLinks } from '../../../data/SiteConfig'
 import {
   nav,
@@ -35,13 +36,16 @@ export default () => {
     return () => window.removeEventListener(`scroll`, handleScroll)
   })
 
+  const isDesktop = useMediaQuery({ query: `(min-width: 620px)` })
+
   return (
     <>
       <nav className={scrolled ? `${nav} ${scroll}` : nav}>
         <div className={navContainer}>
           <div className={brand}>
             <Link to="/">
-              <span className={text} />
+              {isDesktop && <span className={text}>Nicholas Gebhart</span>}
+              {!isDesktop && <span className={text}>NG</span>}
             </Link>
           </div>
           <div className={links}>
