@@ -1,6 +1,6 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../layout'
 import SEO from '../components/SEO'
 import Hero from '../components/Hero'
@@ -9,8 +9,7 @@ import Post from '../components/Post'
 import { siteTitle } from '../../data/SiteConfig'
 import { container, section, titleText } from './index.module.scss'
 
-export default ({ data }) => {
-  const { posts, projects } = data
+export default ({ data: { posts, projects } }) => {
   const { edges: postsData } = posts
   const { edges: projectsData } = projects
 
@@ -20,21 +19,21 @@ export default ({ data }) => {
       <Helmet title={`${siteTitle} - Full Stack Software Developer`} />
       <div className={container}>
         <Hero />
-        <section className={section}>
+        <div className={section}>
           <h2 className={titleText}>Recent Projects</h2>
           <Project projects={projectsData} />
-        </section>
-        <section className={section}>
+        </div>
+        <div className={section}>
           <h2 className={titleText}>Recent Posts</h2>
           <Post posts={postsData} />
-        </section>
+        </div>
       </div>
     </Layout>
   )
 }
 
 export const pageQuery = graphql`
-  query postQuery {
+  query {
     projects: allMarkdownRemark(
       sort: { fields: frontmatter___date, order: DESC }
       filter: { frontmatter: { template: { eq: "project" } } }
