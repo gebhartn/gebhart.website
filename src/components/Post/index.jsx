@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import {
   projects,
   each,
@@ -14,14 +15,9 @@ export default ({ posts: content }) => {
       {content.map(({ node }) => (
         <div className={each} key={node.frontmatter.title}>
           <h2>
-            <a
-              className={link}
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link className={link} to={node.frontmatter.path}>
               <div className={title}>{node.frontmatter.title}</div>
-            </a>
+            </Link>
           </h2>
           <div className={buttons}>
             <span className={button}>{node.timeToRead} min read</span>
