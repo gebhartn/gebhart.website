@@ -11,21 +11,20 @@
     border-bottom: none;
     margin: 0 1rem 0 0;
     font-weight: 400;
-    color: #373737;
-    opacity: 0.8;
+    color: rgba(55, 55, 55, 0.8);
     padding: 0;
     min-width: 110px;
 
     a {
       display: flex;
-      color: #373737;
+      color: rgba(55, 55, 55, 1);
       align-items: center;
     }
   }
 
   p {
     display: none;
-    color: #373737;
+    color: rgba(55, 55, 55, 1);
     font-weight: normal;
     margin: 0;
   }
@@ -56,19 +55,17 @@
     }
 
     h2 {
-      color: #373737;
+      color: rgba(55, 55, 55, 0.8);
       width: 220px;
       min-width: 220px;
       max-width: 220px;
       font-size: 1rem;
       margin-right: 1rem;
       font-weight: 400;
-      opacity: 0.8;
     }
 
     p {
-      color: #373737;
-      opacity: 0.5;
+      color: rgba(55, 55, 55, 0.5);
       display: block;
       flex: 1;
       margin: 0 1rem 0 0;
@@ -76,7 +73,7 @@
     }
 
     .button {
-      color: #373737;
+      color: rgba(55, 55, 55, 1);
       padding: 0 0.5rem;
       font-size: 0.9rem;
       color: rgba(235, 41, 140, 1);

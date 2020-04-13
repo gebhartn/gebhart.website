@@ -28,7 +28,6 @@ export default ({ data }) => {
   )
 }
 
-// Execute query here to pass props into component
 export const pageQuery = graphql`
   query($path: String!) {
     markdownRemark(frontmatter: { path: { eq: $path } }) {

@@ -41,7 +41,7 @@ export default () => {
         <div className={navContainer}>
           <div className={brand}>
             <Link to="/">
-              <span className={text}>Nicholas Gebhart</span>
+              <span className={text} />
             </Link>
           </div>
           <div className={links}>

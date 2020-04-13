@@ -6,16 +6,18 @@ import config from '../../data/SiteConfig'
 import favicon from '../images/favicon.webp'
 import { container, content } from './layout.module.scss'
 
-export default ({ children }) => [
-  <Helmet>
-    <meta name="description" content={config.siteDescription} />
-    <link rel="shortcut icon" type="image/png" href={favicon} />
-  </Helmet>,
-  <div className={container}>
-    <div className={content}>
-      <Navigation />
-      <main id="main">{children}</main>
+export default ({ children }) => (
+  <>
+    <Helmet>
+      <meta name="description" content={config.siteDescription} />
+      <link rel="shortcut icon" type="image/png" href={favicon} />
+    </Helmet>
+    <div className={container}>
+      <div className={content}>
+        <Navigation />
+        <main id="main">{children}</main>
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>,
-]
+  </>
+)
