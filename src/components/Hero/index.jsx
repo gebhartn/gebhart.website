@@ -1,12 +1,31 @@
 import React from 'react'
-import config from '../../../data/SiteConfig'
-import favicon from '../../images/favicon.webp'
+import { graphql, useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
+import { siteTitle, siteDescriptionAlt } from '../../../data/SiteConfig'
 import { container, face, heading, subHeading } from './hero.module.scss'
 
-export default () => (
-  <div className={container}>
-    <img src={favicon} alt="Nicholas Gebhart" className={face} />
-    <h1 className={heading}>{config.siteTitle}</h1>
-    <h2 className={subHeading}>{config.siteDescriptionAlt}</h2>
-  </div>
-)
+export default () => {
+  const { image } = useStaticQuery(graphql`
+    query {
+      image: file(relativePath: { eq: "favicon.webp" }) {
+        childImageSharp {
+          fixed(width: 85, height: 85) {
+            ...GatsbyImageSharpFixed_withWebp
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <div className={container}>
+      <Img
+        className={face}
+        fixed={image.childImageSharp.fixed}
+        alt="Nicholas Gebhart"
+      />
+      <h1 className={heading}>{siteTitle}</h1>
+      <h2 className={subHeading}>{siteDescriptionAlt}</h2>
+    </div>
+  )
+}
