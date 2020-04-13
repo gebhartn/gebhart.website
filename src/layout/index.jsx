@@ -11,6 +11,7 @@ export default ({ children }) => (
     <Helmet>
       <meta name="description" content={config.siteDescription} />
       <link rel="shortcut icon" type="image/png" href={favicon} />
+      <html lang="en" />
     </Helmet>
     <div className={container}>
       <div className={content}>
