@@ -12,15 +12,17 @@ import {
 export default ({ posts }) => {
   return (
     <section className={projects}>
-      {posts.map(({ node }) => (
-        <div className={each} key={node.frontmatter.title}>
+      {posts.map(({ node: { frontmatter, timeToRead } }) => (
+        <div className={each} key={frontmatter.title}>
           <h2>
-            <Link className={link} to={node.frontmatter.path}>
-              <div className={title}>{node.frontmatter.title}</div>
+            <Link className={link} to={frontmatter.path}>
+              <div className={title}>{frontmatter.title}</div>
             </Link>
           </h2>
           <div className={buttons}>
-            <span className={button}>{node.timeToRead} min read</span>
+            <Link className={link} to={frontmatter.path}>
+              <span className={button}>{timeToRead} min read</span>
+            </Link>
           </div>
         </div>
       ))}
