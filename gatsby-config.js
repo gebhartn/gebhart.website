@@ -30,6 +30,16 @@ module.exports = {
       options: {
         plugins: [
           {
+            resolve: `gatsby-remark-autolink-headers`,
+            options: {
+              offsetY: `100`,
+              maintainCase: false,
+              removeAccents: true,
+              className: `remark`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          {
             resolve: `gatsby-remark-external-links`,
             options: {
               target: `_blank`,

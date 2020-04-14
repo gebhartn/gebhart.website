@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
 import { siteTitle } from '../../data/SiteConfig'
-import { container, pageHeader, page } from './generic.module.scss'
+import { container, pageHeader, page } from './post.module.scss'
 
 export default ({ data: { markdownRemark } }) => {
   const { frontmatter, html } = markdownRemark
