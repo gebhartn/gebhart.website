@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import { useMediaQuery } from 'react-responsive'
-import { links as navLinks } from '../../../data/SiteConfig'
+import { links as data } from '../../../data/SiteConfig'
 import {
   nav,
   navContainer,
@@ -15,6 +15,7 @@ import {
 
 export default () => {
   const [scrolled, setScrolled] = React.useState(false)
+  const isDesktop = useMediaQuery({ query: `(min-width: 620px)` })
 
   const scrollBar = () => {
     const { body, documentElement } = document
@@ -32,38 +33,36 @@ export default () => {
 
   React.useEffect(() => {
     window.addEventListener(`scroll`, handleScroll)
-
     return () => window.removeEventListener(`scroll`, handleScroll)
   })
 
-  const isDesktop = useMediaQuery({ query: `(min-width: 620px)` })
-
   return (
-    <>
-      <nav className={scrolled ? `${nav} ${scroll}` : nav}>
-        <div className={navContainer}>
-          <div className={brand}>
-            <Link to="/">
-              {isDesktop && <span className={text}>Nicholas Gebhart</span>}
-              {!isDesktop && <span className={text}>NG</span>}
+    <nav className={scrolled ? `${nav} ${scroll}` : nav}>
+      <div className={navContainer}>
+        <div className={brand}>
+          <Link to="/">
+            {isDesktop ? (
+              <span className={text}>Nicholas Gebhart</span>
+            ) : (
+              !isDesktop && <span className={text}>NG</span>
+            )}
+          </Link>
+        </div>
+        <div className={links}>
+          {data.map(({ title, name, to }) => (
+            <Link title={title} key={name} to={to}>
+              {name}
             </Link>
-          </div>
-          <div className={links}>
-            {navLinks.map(({ title, name, to }) => (
-              <Link title={title} key={name} to={to}>
-                {name}
-              </Link>
-            ))}
-          </div>
+          ))}
         </div>
-        <div
-          className={
-            scrolled ? `${progressContainer} ${scroll}` : progressContainer
-          }
-        >
-          <div className={progressBar} id="bar" />
-        </div>
-      </nav>
-    </>
+      </div>
+      <div
+        className={
+          scrolled ? `${progressContainer} ${scroll}` : progressContainer
+        }
+      >
+        <div className={progressBar} id="bar" />
+      </div>
+    </nav>
   )
 }

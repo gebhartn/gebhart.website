@@ -5,10 +5,6 @@ template: 'post'
 path: '/map-and-foreach'
 ---
 
-# Pariterque corymbis nigra Vix vulnere illa
-
-## Incenduntque arsuros aequoris ille
-
 Lorem *markdownum* prius inexpugnabile auras parte in ipse fluctibus stellis;
 quae terris, cruribus me habet nec [tegit
 anhelos](http://quae-nunc.net/terrarum). Memorare imperat quaerenti querellas
