@@ -8,7 +8,16 @@ path: '/map-and-foreach'
 Test the prism syntax
 
 ```javascript
-const add = a => b => a + b
+import React from 'react'
+
+export default ({ name }) => {
+	const [state, setState] = React.useState({ age: null })
+
+	return (
+		<div>{name}</div>
+	)
+}
+
 ```
 
 ```terminal
