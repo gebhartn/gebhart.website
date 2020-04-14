@@ -10,6 +10,7 @@ module.exports = {
   },
   rules: {
     quotes: ['error', 'backtick', { avoidEscape: true }],
+    'react/no-danger': 'off',
     'react/prop-types': 0,
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',

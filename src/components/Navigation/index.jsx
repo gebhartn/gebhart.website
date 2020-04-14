@@ -25,16 +25,16 @@ export default () => {
     document.getElementById(`bar`).style.width = `${isScrolled}%`
   }
 
-  const handleScroll = () => {
-    if (window.scrollY > 20) setScrolled(true)
-    else setScrolled(false)
-    scrollBar()
-  }
-
   React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) setScrolled(true)
+      else setScrolled(false)
+      scrollBar()
+    }
+
     window.addEventListener(`scroll`, handleScroll)
     return () => window.removeEventListener(`scroll`, handleScroll)
-  })
+  }, [])
 
   return (
     <nav className={scrolled ? `${nav} ${scroll}` : nav}>

@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://nicholasgebhart.com`,
   },
   plugins: [
+    `gatsby-plugin-eslint`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
