@@ -47,7 +47,7 @@
 .nav-container {
   padding: 0 1.5rem;
   height: 55px;
-  max-width: 960px;
+  max-width: 1920px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -124,7 +124,7 @@
       a {
         font-size: 0.9rem;
         margin: 0 0.2rem;
-        padding: 1rem;
+        padding: 1rem 0 1rem 2rem;
         border-bottom: 2px solid transparent;
       }
     }
