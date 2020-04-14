@@ -1,30 +1,19 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import {
-  projects,
-  each,
-  link,
-  title,
-  buttons,
-  button,
-} from './post.module.scss'
+import { projects, each, title, buttons, button } from './post.module.scss'
 
 export default ({ posts }) => {
   return (
     <section className={projects}>
       {posts.map(({ node: { frontmatter, timeToRead } }) => (
-        <div className={each} key={frontmatter.title}>
+        <Link to="/" className={each} key={frontmatter.title}>
           <h2>
-            <Link className={link} to={frontmatter.path}>
-              <div className={title}>{frontmatter.title}</div>
-            </Link>
+            <div className={title}>{frontmatter.title}</div>
           </h2>
           <div className={buttons}>
-            <Link className={link} to={frontmatter.path}>
-              <span className={button}>{timeToRead} min read</span>
-            </Link>
+            <span className={button}>{timeToRead} min read</span>
           </div>
-        </div>
+        </Link>
       ))}
     </section>
   )
