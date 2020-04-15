@@ -1,8 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
+import PostListing from '../components/PostListing'
 import Layout from '../layout'
 import { siteTitle } from '../../data/SiteConfig'
+import { container, pageHeader } from './blog.module.scss'
 
 export default ({ data: { allMarkdownRemark } }) => {
   const { edges } = allMarkdownRemark
@@ -10,16 +12,14 @@ export default ({ data: { allMarkdownRemark } }) => {
   return (
     <Layout>
       <Helmet title={`${siteTitle} - Full Stack Software Developer`} />
-      {edges.map(({ node: { timeToRead, frontmatter } }) => {
-        return (
-          <div key={frontmatter.title}>
-            <Link to={frontmatter.path}>{frontmatter.title}</Link>
-            <h2>
-              {frontmatter.date} {timeToRead}
-            </h2>
-          </div>
-        )
-      })}
+      <div className={container}>
+        <section>
+          <header className={pageHeader}>
+            <h1>Blog</h1>
+          </header>
+          <PostListing posts={edges} />
+        </section>
+      </div>
     </Layout>
   )
 }
