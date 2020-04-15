@@ -1,5 +1,5 @@
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
+const path = require(`path`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
@@ -27,6 +27,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               path
               template
             }
+            fields {
+              slug
+            }
           }
         }
       }
@@ -34,23 +37,24 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   `)
 
   if (result.errors) {
-    reporter.panicOnBuild('Error while running GraphQL query')
+    reporter.panicOnBuild(`Error while running GraphQL query`)
   }
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
     if (node.frontmatter.template === `generic`) {
       createPage({
-        path: node.frontmatter.path,
+        path: node.fields.slug,
         component: generic,
-        context: {},
+        context: { slug: node.fields.slug },
       })
     }
 
     if (node.frontmatter.template === `post`) {
+      console.log(node.fields.slug)
       createPage({
-        path: node.frontmatter.path,
+        path: node.fields.slug,
         component: post,
-        context: {},
+        context: { slug: node.fields.slug },
       })
     }
   })

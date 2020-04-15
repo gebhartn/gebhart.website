@@ -6,11 +6,11 @@ import { projects, each, title, small } from './post.module.scss'
 export default ({ posts }) => {
   return (
     <section className={projects}>
-      {posts.map(({ node: { frontmatter, timeToRead } }) => {
+      {posts.map(({ node: { frontmatter, timeToRead, fields } }) => {
         const date = formatDate(frontmatter.date)
 
         return (
-          <Link to={frontmatter.path} className={each} key={frontmatter.title}>
+          <Link to={fields.slug} className={each} key={frontmatter.title}>
             <h2>
               <div className={title}>{frontmatter.title}</div>
               <small className={small}>

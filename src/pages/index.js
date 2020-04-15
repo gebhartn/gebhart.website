@@ -39,10 +39,12 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             title
             source
-            path
             description
             template
             date
@@ -58,9 +60,11 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             title
-            path
             date
           }
           timeToRead

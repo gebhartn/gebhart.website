@@ -1,5 +1,4 @@
 ---
-path: '/me'
 date: '2020-04-11'
 title: 'About me'
 template: 'generic'
@@ -52,7 +51,7 @@ I am setting out to document and share the things that I've learned in my journe
 [9]: https://github.com/gebhartn/Dotfiles/blob/master/.config/nvim/colors/debris.vim
 [10]: https://github.com/gebhartn/Dotfiles/blob/master/.config/prompt/aliasrc#L56
 [11]: https://github.com/gebhartn
-[12]: /resume
+[12]: /pages/resume
 [13]: https://twitter.com/realngebhart
 [14]: https://linkedin.com/in/nicholas-gebhart
 [15]: mailto:nicholas.gebhart@gmail.com

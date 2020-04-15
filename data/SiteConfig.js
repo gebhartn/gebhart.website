@@ -12,7 +12,7 @@ module.exports = {
     },
     {
       name: `About`,
-      to: `/me/`,
+      to: `pages/about/`,
       title: `About me`,
     },
     {

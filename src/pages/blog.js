@@ -32,9 +32,11 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          fields {
+            slug
+          }
           frontmatter {
             title
-            path
             date
           }
           timeToRead
