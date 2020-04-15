@@ -6,6 +6,11 @@ module.exports = {
   siteDescription: `Nicholas Gebhart is a full stack software developer`,
   links: [
     {
+      name: `Home`,
+      to: `/`,
+      title: `Home`,
+    },
+    {
       name: `About`,
       to: `/me/`,
       title: `About me`,
