@@ -6,7 +6,7 @@ import Hero from '../components/Hero'
 import Project from '../components/Project'
 import Post from '../components/Post'
 import { siteTitle } from '../../data/SiteConfig'
-import { container, section, titleText } from './index.module.scss'
+import { inContainer, inSection, inTitleText } from './pages.module.scss'
 
 export default ({ data: { posts, projects } }) => {
   const { edges: postsData } = posts
@@ -15,14 +15,14 @@ export default ({ data: { posts, projects } }) => {
   return (
     <Layout>
       <Helmet title={`${siteTitle} - Full Stack Software Developer`} />
-      <div className={container}>
+      <div className={inContainer}>
         <Hero />
-        <div className={section}>
-          <h2 className={titleText}>Recent Projects</h2>
+        <div className={inSection}>
+          <h2 className={inTitleText}>Recent Projects</h2>
           <Project projects={projectsData} />
         </div>
-        <div className={section}>
-          <h2 className={titleText}>Recent Posts</h2>
+        <div className={inSection}>
+          <h2 className={inTitleText}>Recent Posts</h2>
           <Post posts={postsData} />
         </div>
       </div>

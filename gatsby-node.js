@@ -15,47 +15,57 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
-  const generic = path.resolve(`src/templates/generic.js`)
-  const post = path.resolve(`src/templates/post.js`)
 
-  const result = await graphql(`
-    {
-      allMarkdownRemark(limit: 1000) {
-        edges {
-          node {
-            frontmatter {
-              path
-              template
-            }
-            fields {
-              slug
+  try {
+    const generic = path.resolve(`src/templates/generic.js`)
+    const post = path.resolve(`src/templates/post.js`)
+
+    const result = await graphql(`
+      {
+        allMarkdownRemark(limit: 1000) {
+          edges {
+            node {
+              frontmatter {
+                path
+                template
+              }
+              fields {
+                slug
+              }
             }
           }
         }
       }
-    }
-  `)
+    `)
 
-  if (result.errors) {
-    reporter.panicOnBuild(`Error while running GraphQL query`)
+    if (result.errors) {
+      reporter.panicOnBuild(`Error while running GraphQL query`)
+    }
+
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      if (node.frontmatter.template === `generic`) {
+        createPage({
+          path: node.fields.slug,
+          component: generic,
+          context: { slug: node.fields.slug },
+        })
+      }
+
+      if (node.frontmatter.template === `post`) {
+        createPage({
+          path: node.fields.slug,
+          component: post,
+          context: { slug: node.fields.slug },
+        })
+      }
+    })
+  } catch (why) {
+    if (why.forEach) {
+      // eslint-disable-next-line no-console
+      why.forEach(e => console.error(e))
+    } else {
+      // eslint-disable-next-line no-console
+      console.error(why)
+    }
   }
-
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    if (node.frontmatter.template === `generic`) {
-      createPage({
-        path: node.fields.slug,
-        component: generic,
-        context: { slug: node.fields.slug },
-      })
-    }
-
-    if (node.frontmatter.template === `post`) {
-      console.log(node.fields.slug)
-      createPage({
-        path: node.fields.slug,
-        component: post,
-        context: { slug: node.fields.slug },
-      })
-    }
-  })
 }

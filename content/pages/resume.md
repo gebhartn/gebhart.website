@@ -42,7 +42,6 @@ Highly motivated full stack software developer
 
 ---
 
-
 ## Projects
 
 #### [Mission Control]() — Program Management Software
@@ -53,7 +52,7 @@ Worked on a team of five developers to build a rich GraphQL backend, integrate O
 
 #### [Safe Routes]() — Intersection Safety Dashboard
 
-Colloborated on a team of three front-end developers to integrate client-side form validation and state management with the React Context API and integrate data visualization via Google Maps to serve predictions from a team of Data Scientists. Duties also included the implementation of client-side routing and authorized fetch API. AGILE environment.
+Collaborated on a team of three front-end developers to build client-side form validation and state management with the React Context API and integrate data visualization via Google Maps to serve predictions from a team of Data Scientists. Duties also included the implementation of client-side routing and authorized fetch API. AGILE environment.
 
 > React w/ Context API, Express, Google Maps API
 

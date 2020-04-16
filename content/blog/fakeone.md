@@ -5,7 +5,7 @@ template: 'post'
 path: '/what-is-the-event-loop'
 ---
 
-Lorem *markdownum* prius inexpugnabile auras parte in ipse fluctibus stellis;
+Lorem _markdownum_ prius inexpugnabile auras parte in ipse fluctibus stellis;
 quae terris, cruribus me habet nec [tegit
 anhelos](http://quae-nunc.net/terrarum). Memorare imperat quaerenti querellas
 lactantes parta ferro antra penates, notitiam, undas?
@@ -39,7 +39,7 @@ mille inmiscuit **ingemuit** descenderat nectar.
 ## Non aurea fui potiere ebur fulmine venit
 
 Qualescumque virtute rastrorumque maius suos manus transit fas clipeo: Tethys
-enim: ille. *Eram poma latebris* ferae; est amantem aut hasta Sardibus, ut
+enim: ille. _Eram poma latebris_ ferae; est amantem aut hasta Sardibus, ut
 amicitiae quoniam!
 
     plug -= 63 + switchModifierLion(4);

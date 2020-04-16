@@ -20,7 +20,6 @@ I am setting out to document and share the things that I've learned in my journe
 
 - [Werewolf][5] — Discord bot to host [The Werewolves][6]
 
-
 ### Tools
 
 - **Computer**: Dell XPS 13
@@ -30,7 +29,6 @@ I am setting out to document and share the things that I've learned in my journe
 - **Theme**: [Debris][9]
 - **Notes**: [Markdown & Git][10]
 
-
 ### Contact me
 
 - [Github][11]
@@ -38,7 +36,6 @@ I am setting out to document and share the things that I've learned in my journe
 - [Twitter][13]
 - [LinkedIn][14]
 - [Email][15]
-
 
 [1]: https://github.com/Lambda-School-Labs/mission-control-fe
 [2]: https://github.com/gebhartn/Computer-Architecture

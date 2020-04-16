@@ -5,41 +5,21 @@ title: 'Contact'
 template: 'generic'
 ---
 
-I'm <span>Nicholas Gebhart</span>, a full stack software developer, writer, and a former beer industry professional. I am always looking for something new and exciting to work on, and to write about the things I've learned along the way.
+Hello, I'm Nicholas Gebhart. I'm a full stack software developer currently based out of Southern California. I love hearing feedback from people, or just getting to have a chat and share some experiences.
 
-My goal is to create new and wonderful things and share the things I learn with other like-minded individuals.
+If you'd like to get in contact with me, please reach out [via email][15] or find me anywhere below!
 
-## Recent Projects
+### Links
 
-- [Mission Control]() - Project Management SaaS
-- [LS-8]() - An 8-bit computer emulator
-- [Safe Routes]() - Dashboard to avoid car accidents
-- [Salty Hacker]() - Hackernews comment sentiment analysis
-- [Werewolf]() - Discord bot to host [The Werewolves](<https://en.wikipedia.org/wiki/Mafia_(party_game)>)
+- GitHub: [gebhartn][11]
+- Twitter: [realngebhart][13]
+- LinkedIn: [nicholas-gebhart][14]
+- Email: [nicholas.gebhart@gmail.com][15]
+- Resume: [CV][12]
+- Feed: [RSS](/rss.xml)
 
-## Fun facts
-
-- Full stack software developer & computer dweeb
-- Loves learning about functional programming
-- Formerly worked in the beer industry as a salesman
-- Consumes entire gallons of tea and coffee daily
-- Low-key master chef with strong opinions about pasta
-- Currently playing Morrowind and Baldur's Gate II
-- Burning desire to meet every cat on the planet
-
-## Tools
-
-- **Computer**: Dell XPS 13
-- **OS**: Arch Linux
-- **Dev Environment**: [Dotfiles]()
-- **Editor**: [Neovim]()
-- **Theme**: [Debris]()
-- **Notes**: [Markdown & Git]()
-
-## Links, contact, info
-
-- [Github]()
-- [Resume]()
-- [Twitter]()
-- [LinkedIn]()
-- [Email]()
+[11]: https://github.com/gebhartn
+[12]: /pages/resume
+[13]: https://twitter.com/realngebhart
+[14]: https://linkedin.com/in/nicholas-gebhart
+[15]: mailto:nicholas.gebhart@gmail.com

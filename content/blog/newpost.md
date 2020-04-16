@@ -5,7 +5,7 @@ template: 'post'
 path: '/should-you-use-graphql'
 ---
 
-Lorem *markdownum* prius inexpugnabile auras parte in ipse fluctibus stellis;
+Lorem _markdownum_ prius inexpugnabile auras parte in ipse fluctibus stellis;
 quae terris, cruribus me habet nec [tegit
 anhelos](http://quae-nunc.net/terrarum). Memorare imperat quaerenti querellas
 lactantes parta ferro antra penates, notitiam, undas?

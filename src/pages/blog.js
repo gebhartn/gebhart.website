@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import PostListing from '../components/PostListing'
 import Layout from '../layout'
 import { siteTitle } from '../../data/SiteConfig'
-import { container, pageHeader } from './blog.module.scss'
+import { bContainer, bPageHeader } from './pages.module.scss'
 
 export default ({ data: { allMarkdownRemark } }) => {
   const { edges } = allMarkdownRemark
@@ -12,9 +12,9 @@ export default ({ data: { allMarkdownRemark } }) => {
   return (
     <Layout>
       <Helmet title={`${siteTitle} - Full Stack Software Developer`} />
-      <div className={container}>
+      <div className={bContainer}>
         <section>
-          <header className={pageHeader}>
+          <header className={bPageHeader}>
             <h1>Blog</h1>
           </header>
           <PostListing posts={edges} />

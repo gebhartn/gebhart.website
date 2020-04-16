@@ -1,0 +1,35 @@
+// Root styles
+.in-container {
+  margin-top: 120px;
+}
+
+.in-section {
+  margin: 80px auto;
+
+  .in-title-text {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0 0.5rem;
+  }
+}
+
+// Blog styles
+.b-container {
+  margin-top: 120px;
+  padding-top: 1.5rem;
+  margin-bottom: 60px;
+}
+
+.b-page-header {
+  h1 {
+    font-weight: 500;
+    padding: 0 0 0 0.5rem;
+  }
+}
+
+@media (min-width: 620px) {
+  .b-container {
+    margin-bottom: 0px;
+  }
+}

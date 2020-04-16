@@ -2,7 +2,7 @@
 title: 'Mission Control'
 source: 'https://github.com/Lambda-School-Labs/mission-control-fe'
 path: 'https://stage.missionctrl.dev'
-description: 'Project management software'
+description: 'Program management software'
 template: 'project'
 date: '2019-04-12'
 ---

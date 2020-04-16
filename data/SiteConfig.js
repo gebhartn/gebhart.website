@@ -20,10 +20,15 @@ module.exports = {
       to: `/blog/`,
       title: `Blog`,
     },
+    // {
+    //   name: `Work`,
+    //   to: `/work/`,
+    //   title: `Work`,
+    // },
     {
-      name: `Work`,
-      to: `/work/`,
-      title: `Work`,
+      name: `Contact`,
+      to: `pages/contact/`,
+      title: `Contact`,
     },
   ],
 }
