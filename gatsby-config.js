@@ -1,9 +1,11 @@
+const config = require(`./data/SiteConfig`)
+
 module.exports = {
   siteMetadata: {
-    title: `Nicholas Gebhart`,
-    description: `Nicholas Gebhart is a full stack software developer`,
-    author: `Nicholas Gebhart`,
-    siteUrl: `https://nicholasgebhart.com`,
+    title: config.siteTitle,
+    description: config.siteDescription,
+    author: config.author,
+    siteUrl: config.siteUrl,
   },
   plugins: [
     `gatsby-plugin-eslint`,
@@ -36,29 +38,37 @@ module.exports = {
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.slug,
                   guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  custom_elements: [{ 'content:encoded': edge.node.html }],
+                  custom_elements: [
+                    { 'content:encoded': edge.node.html },
+                    { author: site.siteMetadata.author },
+                  ],
                 }
               })
             },
             query: `
 							{
-								allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date]}) {
+								allMarkdownRemark(
+								sort: { order: DESC, fields: [frontmatter___date]}
+								filter: { frontmatter: { template: { eq: "post" } } }
+								) {
 									edges {
 										node {
-											excerpt
+											excerpt(pruneLength: 180)
 											html
+											timeToRead
 											fields { slug }
 											frontmatter {
 												title
 												date
+												template
 											}
 										}
 									}
 								}
 							}
 						`,
-            output: `/rss.xml`,
-            title: `Nicholas Gebhart's RSS Feed`,
+            output: config.siteRss,
+            title: `${config.author}'s RSS Feed`,
           },
         ],
       },
