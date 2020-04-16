@@ -43,14 +43,14 @@ export default () => (
       </a>
     </div>
     <div className={linksContainer}>
-      <Link
-        to={siteRss}
+      <a
+        href={siteRss}
         title="RSS feed"
         target="_blank"
         rel="noopener noreferrer"
       >
         RSS
-      </Link>
+      </a>
     </div>
   </footer>
 )

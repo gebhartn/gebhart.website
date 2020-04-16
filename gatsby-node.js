@@ -44,8 +44,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       if (node.frontmatter.template === `generic`) {
+        const [, , route] = node.fields.slug.split(`/`)
+        const slug = `/${route}`
         createPage({
-          path: node.fields.slug,
+          path: slug,
           component: generic,
           context: { slug: node.fields.slug },
         })

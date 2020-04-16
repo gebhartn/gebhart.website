@@ -17,7 +17,7 @@ module.exports = {
     },
     {
       name: `About`,
-      to: `pages/about/`,
+      to: `/about/`,
       title: `About me`,
     },
     {
@@ -27,7 +27,7 @@ module.exports = {
     },
     {
       name: `Contact`,
-      to: `pages/contact/`,
+      to: `/contact/`,
       title: `Contact`,
     },
   ],

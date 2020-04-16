@@ -13,6 +13,21 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-plugin-catch-links`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: config.siteTitle,
+        short_name: config.siteTitleShort,
+        description: config.siteDescription,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#d31c7f`,
+        display: `standalone`,
+        icon: `src/images/favicon.webp`,
+      },
+    },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
