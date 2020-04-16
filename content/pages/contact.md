@@ -16,10 +16,11 @@ If you'd like to get in contact with me, please reach out [via email][15] or fin
 - LinkedIn: [nicholas-gebhart][14]
 - Email: [nicholas.gebhart@gmail.com][15]
 - Resume: [CV][12]
-- Feed: [RSS](/rss.xml)
+- Feed: [RSS][16]
 
 [11]: https://github.com/gebhartn
-[12]: /pages/resume
+[12]: /resume
 [13]: https://twitter.com/realngebhart
 [14]: https://linkedin.com/in/nicholas-gebhart
 [15]: mailto:nicholas.gebhart@gmail.com
+[16]: https://nicholasgebhart.com/rss.xml
