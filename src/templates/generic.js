@@ -7,10 +7,11 @@ import { container, pageHeader, page } from './generic.module.scss'
 
 export default ({ data: { markdownRemark } }) => {
   const { frontmatter, html } = markdownRemark
+  const title = `${siteTitle} - ${frontmatter.title}`
 
   return (
     <Layout>
-      <Helmet title={`${siteTitle} - Full Stack Software Developer`} />
+      <Helmet title={title} />
       <div className={container}>
         <section>
           <header className={pageHeader}>
