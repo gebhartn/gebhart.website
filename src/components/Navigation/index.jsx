@@ -14,7 +14,7 @@ import {
 export default () => {
   const [scrolled, setScrolled] = React.useState(false)
 
-  const scrollBar = () => {
+  const handleProgressBar = () => {
     const { body, documentElement } = document
     const windowScroll = body.scrollTop || documentElement.scrollTop
     const height = documentElement.scrollHeight - documentElement.clientHeight
@@ -26,7 +26,7 @@ export default () => {
     const handleScroll = () => {
       if (window.scrollY > 20) setScrolled(true)
       else setScrolled(false)
-      scrollBar()
+      handleProgressBar()
     }
 
     window.addEventListener(`scroll`, handleScroll)

@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import github from '../../images/github.svg'
 import netlify from '../../images/netlify.svg'
 import gatsby from '../../images/gatsby.svg'
+import { siteRss } from '../../../data/SiteConfig'
 import {
   footer,
   logo,
@@ -16,7 +17,7 @@ export default () => (
       <a href="https://github.com/gebhartn" title="Check out my Github">
         <img
           src={github}
-          alt="Github Logo"
+          alt="GitHub Octocat Logo"
           className={logo}
           target="_blank"
           rel="noopener noreferrer"
@@ -25,7 +26,7 @@ export default () => (
       <a href="https://www.netlify.com" title="Distributed by Netlify">
         <img
           src={netlify}
-          alt="Github Logo"
+          alt="Netlify Logo"
           className={logo}
           target="_blank"
           rel="noopener noreferrer"
@@ -34,7 +35,7 @@ export default () => (
       <a href="https://www.gatsbyjs.org" title="Powered by Gatsby">
         <img
           src={gatsby}
-          alt="Github Logo"
+          alt="Gatsby Logo"
           className={logo}
           target="_blank"
           rel="noopener noreferrer"
@@ -43,7 +44,7 @@ export default () => (
     </div>
     <div className={linksContainer}>
       <Link
-        to="/rss.xml"
+        to={siteRss}
         title="RSS feed"
         target="_blank"
         rel="noopener noreferrer"
