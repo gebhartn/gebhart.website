@@ -4,14 +4,14 @@
 
 ## About
 
-A way to show off the great products and people I work with, and document my experiences learning to write software and grow as a human bean.
+I am setting out to document and share the things that I've learned in my journey as a software developer and technical writer. My goal is to inspire others and to learn through teaching, so that I continue to grow as a developer and technical human being.
 
-## Features
+## What to expect
 
-- React
-- Gatsby
-- Sass
-- Blog posts and views written in Markdown
+ - Learning advanced React patterns
+ - Functional Programming
+ - Tutorials
+ - JavaScript quirks (the fun bits)
 
 ## Author
 
