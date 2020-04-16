@@ -4,6 +4,11 @@ module.exports = {
   siteTitleAlt: `Nicholas Gebhart`,
   siteDescriptionAlt: `Full Stack software developer`,
   siteDescription: `Nicholas Gebhart is a full stack software developer`,
+  author: `Nicholas Gebhart`,
+  siteUrl: `https://nicholasgebhart.com`,
+  dateFromFormat: `YYYY-MM-DD`,
+  dateFormat: `MMMM Do, YYYY`,
+  siteRss: `/rss.xml`,
   links: [
     {
       name: `Home`,
@@ -20,11 +25,6 @@ module.exports = {
       to: `/blog/`,
       title: `Blog`,
     },
-    // {
-    //   name: `Work`,
-    //   to: `/work/`,
-    //   title: `Work`,
-    // },
     {
       name: `Contact`,
       to: `pages/contact/`,
