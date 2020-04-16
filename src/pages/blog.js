@@ -8,10 +8,11 @@ import { bContainer, bPageHeader } from './pages.module.scss'
 
 export default ({ data: { allMarkdownRemark } }) => {
   const { edges } = allMarkdownRemark
+  const title = `${siteTitle} - Blog`
 
   return (
     <Layout>
-      <Helmet title={`${siteTitle} - Full Stack Software Developer`} />
+      <Helmet title={title} />
       <div className={bContainer}>
         <section>
           <header className={bPageHeader}>
