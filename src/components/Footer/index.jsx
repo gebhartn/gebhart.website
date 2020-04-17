@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import github from '../../images/github.svg'
 import netlify from '../../images/netlify.svg'
 import gatsby from '../../images/gatsby.svg'
