@@ -10,7 +10,7 @@ export default () => {
       image: file(relativePath: { eq: "avatar.png" }) {
         childImageSharp {
           fixed(width: 100, height: 100) {
-            ...GatsbyImageSharpFixed_withWebp
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -19,12 +19,7 @@ export default () => {
 
   return (
     <div className={container}>
-      <Img
-        style={{ marginLeft: `15px` }}
-        className={face}
-        fixed={image.childImageSharp.fixed}
-        alt={author}
-      />
+      <Img className={face} fixed={image.childImageSharp.fixed} alt={author} />
       <h1 className={heading}>{siteTitle}</h1>
       <h2 className={subHeading}>{siteDescriptionAlt}</h2>
     </div>
