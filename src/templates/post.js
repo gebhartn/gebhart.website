@@ -2,16 +2,14 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
-import { siteTitle } from '../../data/SiteConfig'
 import { container, pageHeader, page } from './post.module.scss'
 
 export default ({ data: { markdownRemark } }) => {
   const { frontmatter, html } = markdownRemark
-  const title = `${siteTitle} - ${frontmatter.title}`
 
   return (
     <Layout>
-      <Helmet title={title} />
+      <Helmet title={frontmatter.title} />
       <div className={container}>
         <section>
           <header className={pageHeader}>
