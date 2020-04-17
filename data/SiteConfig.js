@@ -9,6 +9,10 @@ module.exports = {
   dateFromFormat: `YYYY-MM-DD`,
   dateFormat: `MMMM Do, YYYY`,
   siteRss: `/rss.xml`,
+  backgroundColor: `#FFFFFF`,
+  themeColor: `#D31C7F`,
+  startUrl: `/`,
+  display: `standalone`,
   links: [
     {
       name: `Home`,

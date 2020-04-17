@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import config from '../../data/SiteConfig'
-import favicon from '../images/favicon.webp'
+import favicon from '../images/favicon.ico'
 import { container, content } from './layout.module.scss'
 
 export default ({ children }) => (
