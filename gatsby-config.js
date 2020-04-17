@@ -25,24 +25,24 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: config.display,
-        icon: `src/images/favicon.png`,
+        icon: `src/images/avatar.png`,
       },
     },
     {
       resolve: `gatsby-plugin-feed`,
       options: {
         query: `
-					{
-						site {
-							siteMetadata {
-								title
-								description
-								siteUrl
-								site_url: siteUrl
-							}
-						}
-					}
-			`,
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
@@ -61,27 +61,27 @@ module.exports = {
               })
             },
             query: `
-							{
-								allMarkdownRemark(
-								sort: { order: DESC, fields: [frontmatter___date]}
-								filter: { frontmatter: { template: { eq: "post" } } }
-								) {
-									edges {
-										node {
-											excerpt(pruneLength: 180)
-											html
-											timeToRead
-											fields { slug }
-											frontmatter {
-												title
-												date
-												template
-											}
-										}
-									}
-								}
-							}
-						`,
+              {
+                allMarkdownRemark(
+                sort: { order: DESC, fields: [frontmatter___date]}
+                filter: { frontmatter: { template: { eq: "post" } } }
+                ) {
+                  edges {
+                    node {
+                      excerpt(pruneLength: 180)
+                      html
+                      timeToRead
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                        template
+                      }
+                    }
+                  }
+                }
+              }
+            `,
             output: config.siteRss,
             title: `${config.author}'s RSS Feed`,
           },

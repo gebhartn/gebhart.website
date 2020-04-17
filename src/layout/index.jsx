@@ -4,7 +4,7 @@ import SEO from '../components/SEO'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import config from '../../data/SiteConfig'
-import favicon from '../images/favicon.ico'
+import favicon from '../images/avatar.png'
 import { container, content } from './layout.module.scss'
 
 export default ({ children }) => (

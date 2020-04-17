@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-top: 60px;
 }
 
 .logo {
@@ -41,6 +41,6 @@
 @media (min-width: 620px) {
   .footer {
     height: 100px;
-    margin: 40px 0 80px;
+    margin: 120px 0 0;
   }
 }
