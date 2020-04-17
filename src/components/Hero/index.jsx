@@ -18,15 +18,10 @@ export default () => {
   `)
 
   return (
-    <div className={container}>
-      <Img
-        style={{ marginLeft: `10px` }}
-        className={face}
-        fixed={image.childImageSharp.fixed}
-        alt={author}
-      />
+    <header className={container}>
+      <Img className={face} fixed={image.childImageSharp.fixed} alt={author} />
       <h1 className={heading}>{siteTitle}</h1>
       <h2 className={subHeading}>{siteDescriptionAlt}</h2>
-    </div>
+    </header>
   )
 }

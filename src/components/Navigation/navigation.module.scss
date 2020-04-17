@@ -26,6 +26,7 @@
 }
 
 .brand {
+  display: none;
   a {
     display: flex;
     margin-right: 0;
@@ -56,9 +57,10 @@
 }
 
 .links {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   a {
@@ -100,6 +102,7 @@
     }
 
     .brand {
+      display: block;
       a {
         font-size: 1.2rem;
       }
