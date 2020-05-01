@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   margin-top: 60px;
 }
@@ -10,7 +10,7 @@
   width: 25px;
   max-height: 25px;
   margin: 0;
-  margin-right: 30px;
+  margin-left: 30px;
 }
 
 .logo-container {

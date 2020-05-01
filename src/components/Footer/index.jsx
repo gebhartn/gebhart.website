@@ -1,4 +1,5 @@
-import React from 'react'
+import * as React from 'react'
+import { Link } from 'gatsby'
 import github from '../../images/github.svg'
 import netlify from '../../images/netlify.svg'
 import gatsby from '../../images/gatsby.svg'
@@ -13,7 +14,7 @@ import {
 export default () => (
   <footer className={footer}>
     <div className={logoContainer}>
-      <a href="https://github.com/gebhartn" title="Check out my Github">
+      <a href="https://github.com/gebhartn/nicholas.dev" title="GitHub">
         <img
           src={github}
           alt="GitHub Octocat Logo"
@@ -22,7 +23,7 @@ export default () => (
           rel="noopener noreferrer"
         />
       </a>
-      <a href="https://www.netlify.com" title="Distributed by Netlify">
+      <a href="https://www.netlify.com" title="Netlify">
         <img
           src={netlify}
           alt="Netlify Logo"
@@ -31,7 +32,7 @@ export default () => (
           rel="noopener noreferrer"
         />
       </a>
-      <a href="https://www.gatsbyjs.org" title="Powered by Gatsby">
+      <a href="https://www.gatsbyjs.org" title="Gatsby">
         <img
           src={gatsby}
           alt="Gatsby Logo"
@@ -50,6 +51,7 @@ export default () => (
       >
         RSS
       </a>
+      <Link to="/contact">Contact</Link>
     </div>
   </footer>
 )
