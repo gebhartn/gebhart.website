@@ -14,9 +14,16 @@ export default ({ cards }) => (
             <Img fixed={featuredImage.childImageSharp.fixed} alt={title} />
           </div>
           <div className={container}>
-            <Link to={path}>
-              <h3>{title}</h3>
-            </Link>
+            {path.startsWith(`/`) ? (
+              <Link to={path}>
+                <h3>{title}</h3>
+              </Link>
+            ) : (
+              <a href={path}>
+                <h3>{title}</h3>
+              </a>
+            )}
+
             <div
               className={content}
               dangerouslySetInnerHTML={{ __html: html }}
