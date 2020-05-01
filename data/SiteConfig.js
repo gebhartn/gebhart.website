@@ -10,19 +10,19 @@ module.exports = {
   dateFormat: `MMMM Do, YYYY`,
   siteRss: `/rss.xml`,
   backgroundColor: `#FFFFFF`,
-  themeColor: `#D31C7F`,
+  themeColor: `#FFFFFF`,
   startUrl: `/`,
   display: `standalone`,
   links: [
     {
+      name: `Home`,
+      to: `/`,
+      title: `Home`,
+    },
+    {
       name: `Work`,
       to: `/work/`,
       title: `Work`,
-    },
-    {
-      name: `Blog`,
-      to: `/blog/`,
-      title: `Blog`,
     },
     {
       name: `Contact`,
