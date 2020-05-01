@@ -1,6 +1,7 @@
 // Root styles
 .in-container {
   margin-top: 120px;
+  padding-top: 1.5rem;
 }
 
 .in-section {
@@ -11,6 +12,18 @@
     font-size: 1.3rem;
     font-weight: 400;
     padding: 0 0.5rem;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    font-size: 0.9rem;
+    padding-left: 2rem;
+    padding-right: 0.5rem;
+    color: rgba(55, 55, 55, 0.69);
   }
 }
 

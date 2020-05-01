@@ -1,30 +1,22 @@
-import React from 'react'
+import * as React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
 import Hero from '../components/Hero'
-import Project from '../components/Project'
-import Post from '../components/Post'
+import Card from '../components/Card'
 import { siteTitle } from '../../data/SiteConfig'
-import { inContainer, inSection, inTitleText } from './pages.module.scss'
+import { inContainer, inSection } from './pages.module.scss'
 
-export default ({ data: { posts, projects } }) => {
-  const { edges: postsData } = posts
-  const { edges: projectsData } = projects
+export default ({ data: { cards } }) => {
+  const { edges: cardsData } = cards
 
   return (
     <Layout>
       <Helmet title={`${siteTitle} - Full Stack Software Developer`} />
       <div className={inContainer}>
         <Hero />
-        <div className={inSection}>
-          <h2 className={inTitleText}>Recent Projects</h2>
-          <Project projects={projectsData} />
-        </div>
-        <div className={inSection}>
-          <h2 className={inTitleText}>Recent Posts</h2>
-          <Post posts={postsData} />
-        </div>
+        <div className={inSection} />
+        <Card cards={cardsData} />
       </div>
     </Layout>
   )
@@ -32,43 +24,25 @@ export default ({ data: { posts, projects } }) => {
 
 export const pageQuery = graphql`
   query {
-    projects: allMarkdownRemark(
+    cards: allMarkdownRemark(
       sort: { fields: frontmatter___date, order: DESC }
-      filter: { frontmatter: { template: { eq: "project" } } }
+      filter: { frontmatter: { template: { eq: "card" } } }
       limit: 5
     ) {
       edges {
         node {
-          fields {
-            slug
-          }
           frontmatter {
             title
-            source
-            description
             path
-            template
-            date
+            featuredImage {
+              childImageSharp {
+                fixed(width: 75, height: 75) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
-        }
-      }
-    }
-
-    posts: allMarkdownRemark(
-      sort: { fields: frontmatter___date, order: DESC }
-      filter: { frontmatter: { template: { eq: "post" } } }
-      limit: 5
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            title
-            date
-          }
-          timeToRead
+          html
         }
       }
     }
