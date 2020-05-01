@@ -1,25 +1,22 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import ProjectListing from '../components/ProjectListing'
 import Layout from '../layout'
+import Hero from '../components/Hero'
+import Card from '../components/Card'
 import { siteTitle } from '../../data/SiteConfig'
-import { bContainer, bPageHeader } from './pages.module.scss'
+import { inContainer, inSection } from './pages.module.scss'
 
-export default ({ data: { allMarkdownRemark } }) => {
-  const { edges } = allMarkdownRemark
-  const title = `${siteTitle} - Blog`
+export default ({ data: { cards } }) => {
+  const { edges: cardsData } = cards
 
   return (
     <Layout>
-      <Helmet title={title} />
-      <div className={bContainer}>
-        <section>
-          <header className={bPageHeader}>
-            <h1>Work</h1>
-          </header>
-          <ProjectListing projects={edges} />
-        </section>
+      <Helmet title={`${siteTitle} - Full Stack Software Developer`} />
+      <div className={inContainer}>
+        <Hero />
+        <div className={inSection} />
+        <Card cards={cardsData} />
       </div>
     </Layout>
   )
@@ -27,9 +24,10 @@ export default ({ data: { allMarkdownRemark } }) => {
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(
+    cards: allMarkdownRemark(
       sort: { fields: frontmatter___date, order: DESC }
       filter: { frontmatter: { template: { eq: "project" } } }
+      limit: 5
     ) {
       edges {
         node {
@@ -40,7 +38,16 @@ export const pageQuery = graphql`
             title
             date
             description
+            path
+            featuredImage {
+              childImageSharp {
+                fixed(width: 75, height: 75) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
+          html
         }
       }
     }
