@@ -1,22 +1,16 @@
 ---
 title: 'Motive'
 source: 'source'
-path: ''
+path: 'https://www.npmjs.com/package/motive-cli'
 description: 'CLI to-do list application'
 template: 'project'
-date: '2020-04-24'
+featuredImage: '../../src/images/icons8-console-100.png'
+date: '2020-04-20'
 ---
 
-### PROJECT info goes here
+<b>Command Line To-Do List Application</b>
 
-### PROJECT info goes here
+Engineered a type-safe and protected back-end and database server leveraging Prisma 2 and TypeScript to deliver a robust API such that users may create, read, update, and delete to-dos from their command line interface.
 
-### PROJECT info goes here
 
-### PROJECT info goes here
-
-### PROJECT info goes here
-
-### PROJECT info goes here
-
-### PROJECT info goes here
+- Typescript, Node.js, Yargs, Prisma 2, Express
