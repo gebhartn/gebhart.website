@@ -15,14 +15,9 @@ module.exports = {
   display: `standalone`,
   links: [
     {
-      name: `Home`,
-      to: `/`,
-      title: `Home`,
-    },
-    {
-      name: `About`,
-      to: `/about/`,
-      title: `About me`,
+      name: `Work`,
+      to: `/work/`,
+      title: `Work`,
     },
     {
       name: `Blog`,
