@@ -1,48 +1,33 @@
 ---
 path: '/resume'
 date: '2020-04-12'
-title: 'Nicholas Gebhart'
 template: 'generic'
 ---
 
-Highly motivated full stack software developer
+### Skills & Languages
+<br />
 
-## Skills & Languages
 
-<style type='text/css' rel='stylesheet'>
-.skills {
-	display: flex;
-	justify-content: space-between;
-	width: 75%;
-}
-</style>
-<div class="skills">
-<div>
+- JavaScript,
+ React,
+ Redux,
+ CSS,
+ HTML,
+ Node,
+ AGILE
 
-- JavaScript
-- React
-- Redux
-- CSS
-- HTML
-- Node
-- AGILE development
-</div>
-<div>
-
-- Python
-- Express
-- GraphQL
-- Testing
-- Linux
-- Docker
-- Vim
-
-</div>
-</div>
+- Python,
+ Express,
+ GraphQL,
+ Testing,
+ Linux,
+ Docker,
+ Vim
 
 ---
 
-## Projects
+### Projects
+<br />
 
 #### [Mission Control]() — Program Management Software
 
@@ -58,7 +43,8 @@ Collaborated on a team of three front-end developers to build client-side form v
 
 ---
 
-## Experience
+### Experience
+<br />
 
 #### Lambda School, Remote — Web Development Section Lead
 
@@ -70,6 +56,9 @@ Created and maintained a network of client relationships to sell beer. Duties in
 
 ---
 
-## Education
+### Education
+<br />
 
 #### Lambda School, Remote — Full Stack Web Development
+
+[1]: ../other/cvpdf.pdf

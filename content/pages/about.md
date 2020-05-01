@@ -10,6 +10,8 @@ I am setting out to document and share the things that I've learned in my journe
 
 ### Recent Projects
 
+- [Motive][5] — CLI to-do list application
+
 - [Mission Control][1] — Project Management tool
 
 - [LS-8][2] — 8-bit computer emulator
@@ -18,7 +20,6 @@ I am setting out to document and share the things that I've learned in my journe
 
 - [Salty Hacker][4] — Hackernews comment sentiment analysis
 
-- [Werewolf][5] — Discord bot to host [The Werewolves][6]
 
 ### Tools
 
@@ -41,7 +42,7 @@ I am setting out to document and share the things that I've learned in my journe
 [2]: https://github.com/gebhartn/Computer-Architecture
 [3]: https://github.com/Build-Week-Safe-Routes-2
 [4]: https://github.com/gebhartn/salty-hacker-backend
-[5]: /
+[5]: https://github.com/gebhartn/motive-cli
 [6]: https://en.wikipedia.org/wiki/Mafia_(party_game)
 [7]: https://github.com/gebhartn/Dotfiles
 [8]: https://github.com/gebhartn/Dotfiles/blob/master/.config/nvim/init.vim
