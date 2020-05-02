@@ -17,7 +17,7 @@ export default () => {
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content={config.twitter} />
-      <meta name="twitter:title" content={config.title} />
+      <meta name="twitter:title" content={config.siteTitle} />
       <meta name="twitter:description" content={config.siteDescription} />
     </Helmet>
   )
