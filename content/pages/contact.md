@@ -23,4 +23,4 @@ If you'd like to get in touch with me, please reach out [via email][15] or find 
 [14]: https://linkedin.com/in/nicholas-gebhart
 [15]: mailto:nicholas.gebhart@gmail.com
 [16]: https://nicholasgebhart.com/rss.xml
-[17]: ../other/cvpdf.pdf
+[17]: ../other/cv.pdf
