@@ -5,6 +5,7 @@ module.exports = {
   siteDescriptionAlt: `Full Stack software developer`,
   siteDescription: `Nicholas Gebhart is a full stack software developer`,
   author: `Nicholas Gebhart`,
+  twitter: `realngebhart`,
   siteUrl: `https://nicholasgebhart.com`,
   dateFromFormat: `YYYY-MM-DD`,
   dateFormat: `MMMM Do, YYYY`,
