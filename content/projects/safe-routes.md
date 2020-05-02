@@ -11,4 +11,8 @@ date: '2019-04-13'
 
 Collaborated on a team of three front-end developers to build client-side form validation and state management with the React Context API and integrate data visualization via Google Maps to serve predictions from a team of Data Scientists. Duties also included the implementation of client-side routing and authorized fetch API. AGILE environment.
 
+[View on GitHub][1]
+
 - React w/ Context Hooks, Google Maps API, Axios, SASS
+
+[1]: https://github.com/Build-Week-Safe-Routes-2

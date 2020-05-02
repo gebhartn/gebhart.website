@@ -6,9 +6,9 @@ path: '/work'
 template: 'card'
 ---
 
-Recently I've worked on [Mission Control][1], [Motive][2], [Safe Routes][3], [Salty Hackers][4], and [Disdjirit][5], but I am always inpired to learn and try new technologies.
+Click [here][7] to see the projects I've been working on recently, which includes [Mission Control][1], [Motive][2], [Safe Routes][3], [Salty Hackers][4], and [Disdjirit][5], but I am always inpired to learn and try new technologies.
 
-Check out my [GitHub][6] or [click here][7] to see more!
+You can also check out my [GitHub][6] to see more!
 
 [1]: https://github.com/Lambda-School-Labs/mission-control-fe
 [2]: https://www.npmjs.com/package/motive-cli

@@ -11,4 +11,8 @@ date: '2019-04-11'
 
 Back-end engineer, collaborated with a team of four other developers to expose an authenticated Express API to store user data and serve predictive models based on sentiment analysis of Hackernews comments.
 
+[View on GitHub][1]
+
 - Node.js, Express, Knex, PostgreSQL, Heroku
+
+[1]: https://github.com/gebhartn/salty-hacker-backend

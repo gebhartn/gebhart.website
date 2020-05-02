@@ -12,5 +12,8 @@ date: '2020-04-20'
 
 Engineered a type-safe and protected back-end and database server leveraging Prisma 2 and TypeScript to deliver a robust API such that users may create, read, update, and delete to-dos from their command line interface.
 
+[View on GitHub][1]
 
 - Typescript, Node.js, Yargs, Prisma 2, Express
+
+[1]: https://github.com/gebhartn/motive-clit

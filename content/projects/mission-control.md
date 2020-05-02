@@ -12,4 +12,8 @@ date: '2020-04-29'
 
 Collaborated with a team of five developers to build a rich GraphQL backend, integrate OKTA authentication, and Dockerize project with initialization scripts for future teams. Built entire greenfield API and role-based note-taking feature with Sendgrid email integration, all features shipped full-stack. AGILE environment.
 
+[View on GitHub][1]
+
 - GraphQL, Prisma, Apollo, React, OKTA, Docker
+
+[1]: https://github.com/Lambda-School-Labs/mission-control-fe
