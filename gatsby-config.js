@@ -25,7 +25,7 @@ module.exports = {
         background_color: config.backgroundColor,
         theme_color: config.themeColor,
         display: config.display,
-        icon: `src/images/avatar.png`,
+        icon: `src/images/favicon.webp`,
       },
     },
     {
