@@ -6,7 +6,7 @@ path: '/work'
 template: 'card'
 ---
 
-Click [here][7] to see the projects I've been working on recently, which include [Mission Control][1], [Motive][2], [Safe Routes][3], [Salty Hackers][4], and [Disdjirit][5]. I am always inspired to learn and try new technologies.
+[Check out][7] all the projects I've been working on recently, which include [Mission Control][1], [Motive][2], [Safe Routes][3], [Salty Hackers][4], and [Disdjirit][5]. I am always inspired to learn and try new technologies.
 
 You can also check out my [GitHub][6] to see more!
 
