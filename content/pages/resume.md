@@ -8,21 +8,8 @@ template: 'generic'
 <br />
 
 
-- JavaScript,
- React,
- Redux,
- CSS,
- HTML,
- Node,
- AGILE
-
-- Python,
- Express,
- GraphQL,
- Testing,
- Linux,
- Docker,
- Vim
+- JavaScript, TypeScript, Golang, Node.js, React, Redux, CSS, HTML,
+- AGILE development, GraphQL, Testing, Linux, Docker, Vim, Java
 
 ---
 
@@ -46,13 +33,9 @@ Collaborated on a team of three front-end developers to build client-side form v
 ### Experience
 <br />
 
+#### Northwestern Mutual, Remote — Associate Software Engineer
+
 #### Lambda School, Remote — Web Development Section Lead
-
-Oversaw the success of Team Leads and their students in the Full Stack Web Development course. Duties included administrative oversight, scheduling and hosting Support Hours, explaining/writing solution code, and ensuring the success of students in my cohort.
-
-#### Craft LA, Los Angeles — Sales
-
-Created and maintained a network of client relationships to sell beer. Duties included sales to off-premise accounts, servicing cooler space, display-building, and customer service. Worked with a small self-directed team to drive numbers and bring smiles to the masses.
 
 ---
 

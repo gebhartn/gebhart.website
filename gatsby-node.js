@@ -1,4 +1,4 @@
-const path = require(`path`)
+const Path = require(`path`)
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -17,8 +17,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   try {
-    const generic = path.resolve(`src/templates/generic.js`)
-    const post = path.resolve(`src/templates/post.js`)
+    const generic = Path.resolve(`src/templates/generic.js`)
+    const post = Path.resolve(`src/templates/post.js`)
 
     const result = await graphql(`
       {
@@ -45,9 +45,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       if (node.frontmatter.template === `generic`) {
         const [, , route] = node.fields.slug.split(`/`)
-        const slug = `/${route}`
+        const path = `/${route}`
         createPage({
-          path: slug,
+          path,
           component: generic,
           context: { slug: node.fields.slug },
         })

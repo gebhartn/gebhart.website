@@ -6,10 +6,7 @@ path: '#about'
 template: 'card'
 ---
 
-I'm [Nicholas][1], a full stack software developer based out of Southern California. I love to work on new [projects][3], cook, and write. I've also got strong opinions about pasta. My skills include:
+I'm Nick, a [Software Engineer][1] & [Blogger][2] currently living in Southern California. I drink mostly coffee and love every cat.
 
- - JavaScript, React, Redux, CSS, HTML, Node, AGILE, Git
- - Python, Express, GraphQL, Testing, Linux, Docker, Vim
-
-[1]: /contact
-[3]: /work
+[1]: https://github.com/gebhartn
+[2]: /blog

@@ -1,6 +1,5 @@
 .footer {
   display: flex;
-  flex-direction: row-reverse;
   justify-content: space-between;
   margin-top: 60px;
 }
@@ -10,7 +9,7 @@
   width: 25px;
   max-height: 25px;
   margin: 0;
-  margin-left: 30px;
+  margin-right: 30px;
 }
 
 .logo-container {
@@ -26,11 +25,12 @@
   justify-content: space-evenly;
   align-items: center;
   display: flex;
+  padding: 0 0.5rem;
 
   a {
     color: rgba(55, 55, 55, 0.69);
     transition: color 0.3s ease;
-    padding: 0 0.5rem;
+    margin-left: 30px;
 
     &:hover {
       color: rgba(55, 55, 55, 1);

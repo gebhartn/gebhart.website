@@ -6,8 +6,6 @@ path: '/blog'
 template: 'card'
 ---
 
-They say the best way to learn is through teaching, so as I am [exploring new tools][1] I have set out to document my experiences and share them with others. This is still a work in progress, but stay tuned!
+They say the best way to learn is by teaching, so I love to share my thought process on my [blog][1].
 
-[1]: /work
-[2]: /blog
-[3]: /newest
+[1]: /blog

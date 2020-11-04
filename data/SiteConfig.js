@@ -21,9 +21,9 @@ module.exports = {
       title: `Home`,
     },
     {
-      name: `Work`,
-      to: `/work/`,
-      title: `Work`,
+      name: `Blog`,
+      to: `/blog`,
+      title: `Blog`,
     },
     {
       name: `Contact`,
