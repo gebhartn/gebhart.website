@@ -12,6 +12,7 @@ I am setting out to document and share the things that I've learned in my journe
  - Functional Programming
  - Tutorials
  - JavaScript quirks (the fun bits)
+ - Blog!
 
 ## Author
 
