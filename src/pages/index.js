@@ -23,7 +23,7 @@ export default ({ data: { cards } }) => {
 export const pageQuery = graphql`
   query {
     cards: allMarkdownRemark(
-      sort: { fields: frontmatter___date, order: DESC }
+      sort: { fields: frontmatter___title, order: ASC }
       filter: { frontmatter: { template: { eq: "card" } } }
       limit: 5
     ) {
@@ -34,7 +34,7 @@ export const pageQuery = graphql`
             path
             featuredImage {
               childImageSharp {
-                fixed(width: 75, height: 75) {
+                fixed(width: 75, height: 75, quality: 100) {
                   ...GatsbyImageSharpFixed
                 }
               }

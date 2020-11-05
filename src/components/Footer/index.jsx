@@ -45,6 +45,9 @@ const Footer = () => (
       </a>
     </div>
     <div className={linksContainer}>
+      <Link to="/">Home</Link>
+      <Link to="/blog">Blog</Link>
+      <Link to="/contact">Contact</Link>
       <a
         href={siteRss}
         title="RSS feed"
@@ -53,7 +56,6 @@ const Footer = () => (
       >
         RSS
       </a>
-      <Link to="/contact">Contact</Link>
     </div>
   </footer>
 )

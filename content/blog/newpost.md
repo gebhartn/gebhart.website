@@ -41,7 +41,7 @@ func main() {
 ```typescript
 // Does it work for TS
 function helloWorld(): void {
-    console.log("Hello world")
+  console.log('Hello world')
 }
 ```
 
@@ -52,3 +52,4 @@ public class HelloWorld {
         System.out.println("Hello, world!")
     }
 }
+```

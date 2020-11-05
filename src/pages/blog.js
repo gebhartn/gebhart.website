@@ -6,8 +6,11 @@ import Layout from '../layout'
 import { siteTitle } from '../../data/SiteConfig'
 import { bContainer } from './pages.module.scss'
 
-export default ({ data: { allMarkdownRemark } }) => {
-  const { edges } = allMarkdownRemark
+const Blog = ({
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
   const title = `${siteTitle} - Blog`
 
   return (
@@ -21,6 +24,8 @@ export default ({ data: { allMarkdownRemark } }) => {
     </Layout>
   )
 }
+
+export default Blog
 
 export const pageQuery = graphql`
   query {
@@ -38,7 +43,7 @@ export const pageQuery = graphql`
             path
             featuredImage {
               childImageSharp {
-                fixed(width: 75, height: 75) {
+                fixed(width: 75, height: 75, quality: 100) {
                   ...GatsbyImageSharpFixed
                 }
               }
