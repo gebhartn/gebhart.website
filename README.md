@@ -1,4 +1,4 @@
-# nicholasgebhart.com
+# gebhart.dev
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-informational)](https://opensource.org/licenses/MIT) [![Netlify Status](https://api.netlify.com/api/v1/badges/b7f963ce-3169-40c1-970c-f196dbe8b67d/deploy-status)](https://app.netlify.com/sites/quirky-hawking-2d6435/deploys)
 
@@ -8,10 +8,9 @@ I am setting out to document and share the things that I've learned in my journe
 
 ## What to expect
 
-- Learning advanced React patterns
+- Learning advanced programming patterns
 - Functional Programming
-- Tutorials
-- JavaScript quirks (the fun bits)
+- Tutorials????
 - Blog!
 
 ## Author
