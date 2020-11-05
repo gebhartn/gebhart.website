@@ -2,7 +2,7 @@
 date: '2020-04-21'
 title: 'Projects'
 featuredImage: '../../src/images/icons8-work-100.png'
-path: '/work'
+path: 'https://github.com/gebhartn'
 template: 'card'
 ---
 
