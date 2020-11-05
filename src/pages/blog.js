@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
-import PostListing from '../components/PostListing'
+import BlogCardContainer from '../containers/BlogCardContainer'
 import Layout from '../layout'
 import { siteTitle } from '../../data/SiteConfig'
 import { bContainer } from './pages.module.scss'
@@ -15,7 +15,7 @@ export default ({ data: { allMarkdownRemark } }) => {
       <Helmet title={title} />
       <div className={bContainer}>
         <section>
-          <PostListing posts={edges} />
+          <BlogCardContainer posts={edges} />
         </section>
       </div>
     </Layout>

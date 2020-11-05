@@ -4,7 +4,7 @@ import Img from 'gatsby-image'
 import { siteTitle, siteDescriptionAlt, author } from '../../../data/SiteConfig'
 import { container, face, heading, subHeading } from './hero.module.scss'
 
-export default () => {
+const Hero = () => {
   const { image } = useStaticQuery(graphql`
     query {
       image: file(relativePath: { eq: "face.jpg" }) {
@@ -27,3 +27,5 @@ export default () => {
     </header>
   )
 }
+
+export default Hero

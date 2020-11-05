@@ -4,7 +4,7 @@ import Helmet from 'react-helmet'
 import config from '../../../data/SiteConfig'
 import favicon from '../../images/favicon-32x32.png'
 
-export default () => {
+const SEO = () => {
   const { pathname } = useLocation()
   const url = config.siteUrl + pathname
 
@@ -22,3 +22,5 @@ export default () => {
     </Helmet>
   )
 }
+
+export default SEO

@@ -24,7 +24,7 @@ export const pageQuery = graphql`
   query {
     cards: allMarkdownRemark(
       sort: { fields: frontmatter___date, order: DESC }
-      filter: { frontmatter: { template: { eq: "card" } } }
+      filter: { frontmatter: { template: { eq: "contact" } } }
       limit: 5
     ) {
       edges {

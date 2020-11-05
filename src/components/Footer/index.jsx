@@ -13,7 +13,7 @@ import {
   linksContainer,
 } from './footer.module.scss'
 
-export default () => (
+const Footer = () => (
   <footer className={footer}>
     <div className={logoContainer}>
       <a href="https://github.com/gebhartn/nicholas.dev" title="GitHub">
@@ -57,3 +57,5 @@ export default () => (
     </div>
   </footer>
 )
+
+export default Footer

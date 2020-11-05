@@ -4,7 +4,7 @@ import Dink from '../Dink'
 
 import { container, outer, wrapper, content } from './card.module.scss'
 
-const Card = ({
+const LandingCard = ({
   node: {
     frontmatter: { title, path, featuredImage },
     html,
@@ -21,4 +21,4 @@ const Card = ({
   </section>
 )
 
-export default Card
+export default LandingCard

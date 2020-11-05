@@ -1,6 +1,6 @@
 ---
 date: '2019-04-10'
-title: 'Should you use GraphQL in your next project?'
+title: 'This post has a bunch of markdown in it for testing'
 featuredImage: '../../src/images/icons8-work-100.png'
 template: 'post'
 path: '/should-you-use-graphql'
@@ -30,3 +30,25 @@ inponere resedit [cum fassaque](http://quacumque.io/) quos fretum nam tamen
 subnixa exanimata in gramen plumae in est. Facit gratia requie inferius ubi
 adhuc tantum altissimus matrem. Pars obversus enim beatos spondere. Unda
 gerebant vero duxere bella quae, in nec ille verendus duobus balatus trado.
+
+```go
+// Does the syntax highlighting support Golang
+func main() {
+    fmt.Println("Hello, world!")
+}
+```
+
+```typescript
+// Does it work for TS
+function helloWorld(): void {
+    console.log("Hello world")
+}
+```
+
+```java
+// Does it support java
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, world!")
+    }
+}
