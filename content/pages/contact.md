@@ -10,11 +10,10 @@ I love hearing feedback from people, or just getting to have a chat and share so
 
 <br/>
 
-[GitHub][11] | [Twiter][13] | [LinkedIn][14] | [Resume][12] | [RSS][16]
+[GitHub][11] | [LinkedIn][14] | [Resume][12] | [RSS][16]
 
 [11]: https://github.com/gebhartn
 [12]: /resume
-[13]: https://twitter.com/realngebhart
 [14]: https://linkedin.com/in/nicholas-gebhart
 [15]: mailto:nicholas.gebhart@gmail.com
 [16]: https://nicholasgebhart.com/rss.xml

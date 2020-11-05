@@ -17,13 +17,13 @@ template: 'generic'
 
 <br />
 
-#### [Mission Control]() — Program Management Software
+#### [Mission Control](https://github.com/Lambda-School-Labs/mission-control-be) — Program Management Software
 
 Worked on a team of five developers to build a rich GraphQL backend, integrate OKTA authentication, and Dockerize project with initialization scripts for future teams. Built entire greenfield API and role-based note-taking feature with Sendgrid email integration, all features shipped full-stack. AGILE environment.
 
 > React, GraphQL, Prisma, Docker, OKTA, AWS
 
-#### [Safe Routes]() — Intersection Safety Dashboard
+#### [Safe Routes](https://github.com/gebhartn) — Intersection Safety Dashboard
 
 Collaborated on a team of three front-end developers to build client-side form validation and state management with the React Context API and integrate data visualization via Google Maps to serve predictions from a team of Data Scientists. Duties also included the implementation of client-side routing and authorized fetch API. AGILE environment.
 
