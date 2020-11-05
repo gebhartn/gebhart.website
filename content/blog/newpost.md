@@ -1,6 +1,7 @@
 ---
 date: '2019-04-10'
 title: 'Should you use GraphQL in your next project?'
+featuredImage: '../../src/images/icons8-work-100.png'
 template: 'post'
 path: '/should-you-use-graphql'
 ---

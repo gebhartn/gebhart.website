@@ -1,6 +1,7 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
 import SEO from '../components/SEO'
+import Hero from '../components/Hero'
 import Navigation from '../components/Navigation'
 import Footer from '../components/Footer'
 import config from '../../data/SiteConfig'
@@ -22,7 +23,10 @@ export default ({ children }) => (
     <div className={container}>
       <div className={content}>
         <Navigation />
-        <main id="main">{children}</main>
+        <main id="main">
+          <Hero />
+          {children}
+        </main>
       </div>
       <Footer />
     </div>

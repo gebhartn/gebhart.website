@@ -5,8 +5,8 @@ template: 'generic'
 ---
 
 ### Skills & Languages
-<br />
 
+<br />
 
 - JavaScript, TypeScript, Golang, Node.js, React, Redux, CSS, HTML,
 - AGILE development, GraphQL, Testing, Linux, Docker, Vim, Java
@@ -14,6 +14,7 @@ template: 'generic'
 ---
 
 ### Projects
+
 <br />
 
 #### [Mission Control]() — Program Management Software
@@ -31,6 +32,7 @@ Collaborated on a team of three front-end developers to build client-side form v
 ---
 
 ### Experience
+
 <br />
 
 #### Northwestern Mutual, Remote — Associate Software Engineer
@@ -40,6 +42,7 @@ Collaborated on a team of three front-end developers to build client-side form v
 ---
 
 ### Education
+
 <br />
 
 #### Lambda School, Remote — Full Stack Web Development

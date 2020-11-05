@@ -1,5 +1,7 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import classNames from 'classnames'
+import { useScroll } from '../../hooks'
 import { links as data } from '../../../data/SiteConfig'
 import {
   nav,
@@ -10,20 +12,11 @@ import {
 } from './navigation.module.scss'
 
 export default () => {
-  const [scrolled, setScrolled] = React.useState(false)
-
-  React.useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 20) setScrolled(true)
-      else setScrolled(false)
-    }
-
-    window.addEventListener(`scroll`, handleScroll)
-    return () => window.removeEventListener(`scroll`, handleScroll)
-  }, [])
+  const scrolled = useScroll()
+  const parentClasses = classNames(nav, { [scroll]: scrolled })
 
   return (
-    <nav className={scrolled ? `${nav} ${scroll}` : nav}>
+    <nav className={parentClasses}>
       <div className={navContainer}>
         <div className={brand} />
         <div className={links}>

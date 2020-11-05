@@ -1,6 +1,7 @@
 ---
 date: '2019-04-10'
 title: 'What exactly is Redux, anyways'
+featuredImage: '../../src/images/icons8-work-100.png'
 template: 'post'
 path: '/what-is-redux'
 ---

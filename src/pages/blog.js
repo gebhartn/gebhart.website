@@ -4,7 +4,7 @@ import { graphql } from 'gatsby'
 import PostListing from '../components/PostListing'
 import Layout from '../layout'
 import { siteTitle } from '../../data/SiteConfig'
-import { bContainer, bPageHeader } from './pages.module.scss'
+import { bContainer } from './pages.module.scss'
 
 export default ({ data: { allMarkdownRemark } }) => {
   const { edges } = allMarkdownRemark
@@ -15,9 +15,6 @@ export default ({ data: { allMarkdownRemark } }) => {
       <Helmet title={title} />
       <div className={bContainer}>
         <section>
-          <header className={bPageHeader}>
-            <h1>Blog</h1>
-          </header>
           <PostListing posts={edges} />
         </section>
       </div>
@@ -38,7 +35,14 @@ export const pageQuery = graphql`
           }
           frontmatter {
             title
-            date
+            path
+            featuredImage {
+              childImageSharp {
+                fixed(width: 75, height: 75) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
           }
           timeToRead
         }

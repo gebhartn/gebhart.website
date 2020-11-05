@@ -1,9 +1,11 @@
 import * as React from 'react'
 import { Link } from 'gatsby'
+import { siteRss } from '../../../data/SiteConfig'
+
 import github from '../../images/github.svg'
 import netlify from '../../images/netlify.svg'
 import gatsby from '../../images/gatsby.svg'
-import { siteRss } from '../../../data/SiteConfig'
+
 import {
   footer,
   logo,

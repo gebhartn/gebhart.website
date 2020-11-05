@@ -1,4 +1,6 @@
-import moment from 'moment'
+import dayjs from 'dayjs'
 import { dateFromFormat, dateFormat } from '../../data/SiteConfig'
 
-export default date => moment(date, dateFromFormat).format(dateFormat)
+export const formatDate = date => dayjs(date, dateFromFormat).format(dateFormat)
+
+export default { formatDate }

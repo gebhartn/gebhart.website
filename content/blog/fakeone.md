@@ -1,6 +1,7 @@
 ---
 date: '2019-04-10'
 title: 'What is the event loop?'
+featuredImage: '../../src/images/icons8-work-100.png'
 template: 'post'
 path: '/what-is-the-event-loop'
 ---

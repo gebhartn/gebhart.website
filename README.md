@@ -8,11 +8,11 @@ I am setting out to document and share the things that I've learned in my journe
 
 ## What to expect
 
- - Learning advanced React patterns
- - Functional Programming
- - Tutorials
- - JavaScript quirks (the fun bits)
- - Blog!
+- Learning advanced React patterns
+- Functional Programming
+- Tutorials
+- JavaScript quirks (the fun bits)
+- Blog!
 
 ## Author
 

@@ -8,5 +8,5 @@ template: 'card'
 
 All of my personal projects are open source and available on my [GitHub][1], including the page you're [currently viewing][2].
 
-[1]: https://github.com/Lambda-School-Labs/mission-control-fe
+[1]: https://github.com/gebhartn
 [2]: https://github.com/gebhartn/nicholas.dev

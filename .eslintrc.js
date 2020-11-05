@@ -1,6 +1,6 @@
 module.exports = {
-  plugins: ['react-hooks'],
-  extends: ['airbnb', 'plugin:prettier/recommended', 'prettier/react'],
+  plugins: [`react-hooks`],
+  extends: [`airbnb`, `prettier`, `prettier/react`],
   env: {
     browser: true,
     commonjs: true,
@@ -9,15 +9,15 @@ module.exports = {
     node: true,
   },
   rules: {
-    quotes: ['error', 'backtick', { avoidEscape: true }],
-    'react/no-danger': 'off',
+    quotes: [`error`, `backtick`, { avoidEscape: true }],
+    'react/no-danger': `off`,
     'react/prop-types': 0,
-    'react-hooks/rules-of-hooks': 'error',
-    'react-hooks/exhaustive-deps': 'warn',
-    'jsx-a11y/href-no-hash': ['off'],
-    'react/jsx-filename-extension': ['warn', { extensions: ['.js', '.jsx'] }],
+    'react-hooks/rules-of-hooks': `error`,
+    'react-hooks/exhaustive-deps': `warn`,
+    'jsx-a11y/href-no-hash': [`off`],
+    'react/jsx-filename-extension': [`warn`, { extensions: [`.js`, `.jsx`] }],
     'max-len': [
-      'warn',
+      `warn`,
       {
         code: 80,
         tabWidth: 2,

@@ -2,8 +2,7 @@ import * as React from 'react'
 import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../layout'
-import Hero from '../components/Hero'
-import Card from '../components/Card'
+import CardContainer from '../containers/CardContainer'
 import { siteTitle } from '../../data/SiteConfig'
 import { inContainer, inSection } from './pages.module.scss'
 
@@ -12,19 +11,17 @@ export default ({ data: { cards } }) => {
 
   return (
     <Layout>
-      <Helmet title={`${siteTitle} - Full Stack Software Developer`} />
+      <Helmet title={`${siteTitle} - Software Engineer`} />
       <div className={inContainer}>
-        <Hero />
         <div className={inSection} />
-        <Card cards={cardsData} />
+        <CardContainer cards={cardsData} />
       </div>
     </Layout>
   )
 }
 
 export const pageQuery = graphql`
-  query {
-    cards: allMarkdownRemark(
+  query { cards: allMarkdownRemark(
       sort: { fields: frontmatter___date, order: DESC }
       filter: { frontmatter: { template: { eq: "card" } } }
       limit: 5

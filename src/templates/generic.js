@@ -1,8 +1,8 @@
 import * as React from 'react'
 import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Layout from '../layout'
-import Hero from '../components/Hero'
+import Dink from '../components/Dink'
 import { siteTitle } from '../../data/SiteConfig'
 import {
   inContainer,
@@ -21,13 +21,14 @@ export default ({ data: { markdownRemark } }) => {
     <Layout>
       <Helmet title={title} />
       <div className={inContainer}>
-        <Hero />
         <section className={inSection}>
           <div id={frontmatter.path} className={outer} key={title}>
             <div className={container}>
-              <Link className={text} to={frontmatter.path}>
-                <h3>{frontmatter.title}</h3>
-              </Link>
+              <Dink
+                className={text}
+                path={frontmatter.path}
+                title={frontmatter.title}
+              />
               <div
                 className={content}
                 dangerouslySetInnerHTML={{ __html: html }}

@@ -1,31 +1,16 @@
 .projects {
+  img {
+    display: none;
+  }
   .each {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding: 0.5rem 0;
     transition: background 0.3s ease;
 
     &:hover,
     &:active {
       background: rgba(55, 55, 55, 0.03);
-    }
-  }
-
-  h2 {
-    font-size: 1rem;
-    border-bottom: none;
-    margin: 0 1rem 0 0;
-    font-weight: 400;
-    color: rgba(55, 55, 55, 0.8);
-    padding: 0 0 0 0.5rem;
-    min-width: 110px;
-    line-height: 1.4;
-
-    a {
-      display: flex;
-      color: rgba(55, 55, 55, 1);
-      align-items: center;
     }
   }
 
@@ -47,22 +32,11 @@
   .projects {
     .each {
       display: flex;
-      justify-content: space-between;
-      padding: 1.25rem 0;
       border-bottom: 1px solid #eee;
 
       &:last-of-type {
         border-bottom: none;
       }
-    }
-
-    h2 {
-      color: rgba(55, 55, 55, 0.8);
-      min-width: 420px;
-      font-size: 1rem;
-      margin-right: 1rem;
-      font-weight: 400;
-      padding: 0 0.5rem;
     }
 
     p {
