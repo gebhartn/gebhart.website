@@ -1,7 +1,7 @@
 ---
 date: '2020-11-05'
 title: "It's finally done!"
-featuredImage: '../../src/images/icons8-work-100.png'
+featuredImage: '../../src/images/icons8-hand-with-pen-100.png'
 template: 'post'
 path: '/first-blog-post'
 ---
