@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>{{ config.title }}</title>
+
+        <link rel="stylesheet" href="/normalize.css" />
+        <link rel="stylesheet" href="/sakura.css" />
+        <link rel="stylesheet" href="/style.css" />
+    </head>
+
+    <body>
+        <div>
+            {% include "header.html" %}
+            <main>{% block content %} {% endblock %}</main>
+        </div>
+        {% include "footer.html" %}
+    </body>
+</html>
