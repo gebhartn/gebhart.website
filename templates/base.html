@@ -1,9 +1,61 @@
+{% import "macros/head.html" as head -%}
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>{{ config.title }}</title>
+        <meta property="og:locale" content="en" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+        <title>{% block title %}{{ config.title }}{% endblock %}</title>
+
+        <meta property="og:title" content="{{ head::title() }}" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="{{ head::title() }}" />
+
+        <meta name="twitter:site" content="@realngebhart" />
+        <meta name="twitter:creator" content="@realngebhart" />
+        <meta name="author" content="Nicholas Gebhart" />
+
+        {%- if page.description -%}
+        <meta name="description" content="{{ page.description }}" />
+        <meta name="twitter:description" content="{{ page.description }}" />
+        <meta property="og:description" content="{{ page.description }}" />
+        {%- else -%}
+        <meta
+            name="description"
+            content="Nicholas Gebhart is a Software Engineer"
+        />
+        <meta
+            name="twitter:description"
+            content="Nicholas Gebhart is a Software Engineer"
+        />
+        <meta
+            property="og:description"
+            content="Nicholas Gebhart is a Software Engineer"
+        />
+        {%- endif -%} {%- if page.image -%}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:image"
+            content="{{ config.base_url }}{{ page.image }}"
+        />
+        <meta
+            property="og:image"
+            content="{{ config.base_url }}{{ page.image }}"
+        />
+        {%- else -%}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+            name="twitter:image"
+            content="{{ config.base_url }}assets/favicon-32x32.png"
+        />
+        <meta
+            property="og:image"
+            content="{{ config.base_url }}assets/favicon-32x32.png"
+        />
+        {%- endif -%}
+
+        <link rel="shortcut icon" type="image/png" href="/favicon-32x32.png" />
         <link rel="stylesheet" href="/normalize.css" />
         <link rel="stylesheet" href="/style.css" />
     </head>
