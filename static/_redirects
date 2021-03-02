@@ -1,0 +1,6 @@
+# Redirects from browser requests -> what we serve
+
+# From:                     To:
+/github                     https://github.com/gebhartn/
+/netlify                    https://netlify.com/
+/zola                       https://getzola.org/
