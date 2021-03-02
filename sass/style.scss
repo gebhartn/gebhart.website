@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import 'sakura';
+
 body {
     margin: 0 auto;
     display: flex;
@@ -37,9 +39,15 @@ footer {
         ul li {
             margin-right: 2rem;
         }
+
+        img {
+            width: 3rem;
+            margin-bottom: 0;
+        }
     }
 
     div:nth-child(2) {
+        justify-content: flex-end;
         ul li {
             margin-left: 2rem;
         }
