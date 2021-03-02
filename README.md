@@ -1,6 +1,6 @@
 # gebhart.dev
 
-A general purpose website serving as the primary location of my portfolio, contact information, writings, and general information about myself.
+A general purpose website serving as the primary location of my portfolio, contact information, writings, and general information about myself. Built with Markdown and Sakura, powered by Zola and Netlify.
 
 ## Building
 
