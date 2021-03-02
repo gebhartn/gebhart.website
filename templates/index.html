@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>Hello, world!</h1>
-<p>As you can see, we are temporarily under construction.</p>
-<p>Nothing lights a fire under your ass quite like having no functional site deployed</p>
+
+<section>
+    {{ section.content | safe }}
+</section>
+
 {% endblock content %}
