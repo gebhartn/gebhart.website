@@ -32,9 +32,15 @@ header {
     }
 }
 
+aside {
+    display: flex;
+    justify-content: space-between;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
+    margin-top: 3rem;
 
     div:nth-child(1) {
         ul li {
@@ -73,5 +79,28 @@ footer {
 
     img {
         border-radius: 50%;
+    }
+}
+
+.post {
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+
+        a li blockquote p:first-child {
+            font-weight: bold;
+        }
+    }
+}
+
+.banner {
+    background-color: #e8f4fd;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 0 -1em 1em;
+    padding: 0.5em 1em;
+
+    p {
+        margin: 0;
     }
 }
