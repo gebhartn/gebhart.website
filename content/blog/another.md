@@ -1,6 +1,6 @@
 +++
-title = "My first post"
-date = 2021-03-01
+title = "Earliest post"
+date = 2021-01-01
 description = "This is a short description of the blog post"
 [extra]
 github = "url"
