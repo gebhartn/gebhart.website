@@ -1,12 +1,25 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1 class="title">
-  {{ section.title }}
-</h1>
-<ul>
-  {% for page in section.pages %}
-  <li><a href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
-  {% endfor %}
-</ul>
+<section class="post">
+    {{ section.content | safe }}
+    <ul>
+      {% for page in section.pages %}
+              <a href="{{ page.permalink | safe }}">
+                  <li>
+                      <blockquote>
+                          <p>{{ page.title }}</p>
+                          <p>
+                              {%- if page.summary -%}
+                              {{ page.summary | striptags }}
+                              {%- else -%}
+                              {{ page.content | safe | striptags | truncate(length=120) }}
+                              {%- endif %}
+                          </p>
+                      </blockquote>
+                  </li>
+              </a>
+      {% endfor %}
+    </ul>
+</section>
 {% endblock content %}
