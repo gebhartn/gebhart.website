@@ -1,10 +1,11 @@
-base_url = "https://gebhart.dev"
+base_url = "https://gebhart.dev/"
 
 compile_sass = true
 
 build_search_index = false
 
 title = "Nicholas Gebhart"
+dscription = "Nicholas Gebhart is a Software Engineer"
 
 generate_feed = true
 
@@ -12,4 +13,4 @@ generate_feed = true
 highlight_code = false
 
 [extra]
-# Extras go here
+repo = "https://github.com/gebhartn/gebhart.dev"
