@@ -5,7 +5,7 @@ compile_sass = true
 build_search_index = false
 
 title = "Nicholas Gebhart"
-dscription = "Nicholas Gebhart is a Software Engineer"
+description = "Nicholas Gebhart is a Software Engineer"
 
 generate_feed = true
 
