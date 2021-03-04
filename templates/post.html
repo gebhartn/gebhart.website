@@ -1,14 +1,28 @@
 {% extends "base.html" %}
 
-{%block title %}{{ page.title  }} | {{ config.title }}{% endblock %}
+{%block posthead %}
+    {% if page.earlier %}
+        <link rel="prerender" href="{{ page.earlier.permalink }}">
+    {% endif %}
+
+    {% if page.later %}
+        <link rel="prerender" href="{{ page.later.permalink }}">
+    {% endif %}
+{% endblock %}
+
+{%block title %}
+    {{ page.title  }} | {{ config.title }}
+{% endblock %}
 
 {% block content %}
 
+<header>
+    {% include "nav.html" %}
+</header>
+
 <article>
     <h1>{{ page.title }}</h1>
-    <p>
-        {{ page.date | date(format="%B %d, %Y") }} &#8226; {{ page.reading_time }} minute read
-    </p>
+    <p>{{ page.date | date(format="%B %d, %Y") }} &#8226; {{ page.reading_time }} minute read</p>
 
     <!-- Blog post -->
     {{ page.content | safe }}

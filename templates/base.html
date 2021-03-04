@@ -45,19 +45,16 @@
             property="og:image"
             content="{{ config.base_url }}assets/favicon-32x32.png"
         />
-        {%- endif -%}
-
+        {%- endif -%} <link rel="prefetch" href="{{
+        resize_image(path=config.extra.profile, width=100, height=100,
+        op="fill") }}" />
         <link rel="shortcut icon" type="image/png" href="/favicon-32x32.png" />
         <link rel="stylesheet" href="/normalize.css" />
         <link rel="stylesheet" href="/style.css" />
+        {% block posthead %} {% endblock %}
     </head>
 
     <body>
-        <!-- Flex container -->
-        <div>
-            {% include "header.html" %}
-            <main>{% block content %} {% endblock %}</main>
-        </div>
-        {% include "footer.html" %}
+        {% block content %} {% endblock %}
     </body>
 </html>

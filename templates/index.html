@@ -1,9 +1,16 @@
 {% extends "base.html" %}
 
-{%block title %}{{ config.title }} | {{ section.title  }}{% endblock %}
+{%block title %}
+    {{ config.title }}
+{% endblock %}
 
 {% block content %}
-<section>
-    {{ section.content | safe }}
-</section>
+    <!-- Flex container -->
+    <div>
+        {% include "header.html" %}
+        <section>
+            {{ section.content | safe }}
+        </section>
+    </div>
+    {% include "footer.html" %}
 {% endblock content %}
