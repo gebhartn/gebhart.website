@@ -1,15 +1,7 @@
 +++
 title = "Contact"
+description = "Get in touch"
 +++
-
-{%
-hero(title="Contact",
-src="../static/images/avatar.jpg",
-alt="Contact")
-%}
-
-Get in touch
-{% end %}
 
 #### Collaboration
 Interested in working together? Reach out to me via any of the following links, or if it's simpler for you - open an [Issue/Pull Request][0]!

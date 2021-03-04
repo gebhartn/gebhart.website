@@ -1,15 +1,7 @@
 +++
-title = "Home"
+title = "Nicholas Gebhart"
+description = "Software Engineer"
 +++
-
-{%
-hero(title="Nicholas Gebhart",
-src="../static/images/avatar.jpg",
-alt="Nicholas Gebhart")
-%}
-
-Software Engineer
-{% end %}
 
 #### About
 I'm Nicholas, a [Software Engineer][0] currently based out of Southern California. I drink mostly coffee and love every cat.
