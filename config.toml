@@ -14,3 +14,4 @@ highlight_code = false
 
 [extra]
 repo = "https://github.com/gebhartn/gebhart.dev"
+profile = "profile.jpg"
