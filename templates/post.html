@@ -4,7 +4,6 @@
     {% if page.earlier %}
         <link rel="prerender" href="{{ page.earlier.permalink }}">
     {% endif %}
-
     {% if page.later %}
         <link rel="prerender" href="{{ page.later.permalink }}">
     {% endif %}
@@ -30,13 +29,9 @@
     <!-- Discussion -->
     {%- if page.extra -%}
     <p>
-        <a href="https://twitter.com/share?text={{ page.title }}&url={{ page.permalink | trim_end_matches(pat="/") }}">
-            Discuss on Twitter
-        </a>
-        &#8226;
-        <a href="{{ config.extra.repo }}/tree/main/content/{{ page.relative_path }}">
-            Edit on GitHub
-        </a>
+        <a href="https://twitter.com/share?text={{ page.title }}&url={{ page.permalink | trim_end_matches(pat="/") }}">Discuss on Twitter</a>
+         &#8226;
+        <a href="{{ config.extra.repo }}/tree/main/content/{{ page.relative_path }}">Edit on GitHub</a>
     </p>
     {%- endif -%}
 </article>
@@ -44,19 +39,11 @@
 <!-- Related posts -->
 <aside>
     {% if page.earlier %}
-    <p>
-        <a href="{{ page.earlier.permalink }}">
-            &#8592; {{ page.earlier.title }}
-        </a>
-    </p>
+    <p><a href="{{ page.earlier.permalink }}">&#8592; {{ page.earlier.title }}</a></p>
     {% endif %}
 
     {% if page.later %}
-    <p>
-        <a href="{{ page.later.permalink }}">
-            {{ page.later.title }} &#8594;
-        </a>
-    </p>
+    <p><a href="{{ page.later.permalink }}">{{ page.later.title }} &#8594;</a></p>
     {% endif %}
 </aside>
 

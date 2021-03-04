@@ -14,7 +14,6 @@
     <!-- Flex container -->
     <div>
         {% include "header.html" %}
-
         <section class="post">
             {{ section.content | safe }}
             <ul>
@@ -25,9 +24,9 @@
                                   <p>{{ page.title }}</p>
                                   <p>
                                       {%- if page.summary -%}
-                                      {{ page.summary | striptags }}
+                                        {{ page.summary | striptags }}
                                       {%- else -%}
-                                      {{ page.content | safe | striptags | truncate(length=120) }}
+                                        {{ page.content | safe | striptags | truncate(length=120) }}
                                       {%- endif %}
                                   </p>
                               </blockquote>

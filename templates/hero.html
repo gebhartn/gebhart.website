@@ -1,12 +1,17 @@
 <div class="hero">
-    <img src="{{ resize_image(path=config.extra.profile, width=100, height=100,
-    op="fill") }}" alt="alt" />
+    <img src="{{ resize_image(path=config.extra.profile, width=100, height=100, op="fill") }}" alt="Nicholas Gebhart" />
     <h1>
-        {%- if section -%} {{ section.title }} {%- else -%} {{ page.title }} {%-
-        endif -%}
+        {%- if section -%}
+            {{ section.title }}
+        {%- else -%}
+            {{ page.title }}
+        {%- endif -%}
     </h1>
     <em>
-        {%- if section -%} {{ section.description }} {%- else -%} {{
-        page.description }} {%- endif -%}
+        {%- if section -%}
+            {{ section.description }}
+        {%- else -%}
+            {{ page.description }}
+        {%- endif -%}
     </em>
 </div>
