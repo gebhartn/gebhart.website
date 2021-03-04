@@ -1,6 +1,22 @@
 @charset "utf-8";
-
 @import 'sakura';
+
+@media (max-width: 684px) {
+    body {
+        > * {
+            padding: 0 1.5rem;
+        }
+    }
+
+    footer {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        ul li {
+            margin: 0 1rem;
+        }
+    }
+}
 
 body {
     margin: 0 auto;
@@ -33,6 +49,7 @@ header {
 }
 
 aside {
+    margin: 4rem 0;
     display: flex;
     justify-content: space-between;
 }
