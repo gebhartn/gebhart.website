@@ -10,7 +10,7 @@ description = "Nicholas Gebhart is a Software Engineer"
 generate_feed = true
 
 [markdown]
-highlight_code = false
+highlight_code = true
 
 [extra]
 repo = "https://github.com/gebhartn/gebhart.dev"
