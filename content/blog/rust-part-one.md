@@ -1,5 +1,5 @@
 +++
-title = "Oxidation - A Rust Journey"
+title = "Oxidation - A Rust Journey: Guessing Game"
 date = 2021-03-06
 description = "My journey to learn the Rust language"
 [extra]
@@ -12,6 +12,10 @@ I got my first taste of programming from a bootcamp I attended in 2019/2020 wher
 Perhaps Rust would make more sense if I had a background in systems programming, or maybe looking at Rust with fresh eyes is exactly what will enable me to succeed in this task, since I'll be free from the burden of how I believe things ought to work in C++ or C. At any rate, I am going to be writing a multi-part series of blog posts to document my step-by-step journey into the Rust language as I work through [the book][2], and any associated projects I write along the way.
 
 I don't claim this will be unique, nor will I likely have any meaningful input to contribute to the text aside from the perspective of learning a systems language as not only a novice engineer, but as someone whose primary mode of work has always been JavaScript. Join me, as I attempt to oxidize my brain!
+
+{% banner() %}
+This post is part of a series, you can check out part two <a href="/blog/rust-part-two/">here</a>.
+{% end %}
 
 #### Guessing Game
 
@@ -200,6 +204,10 @@ let guess: i32 = match guess.trim().parse() {
 Above, we have exhaustive matching as dictated by the `match` keyword and handle or happy path by returning the integer, or printing an error message and continuing our loop in the error case.
 
 All things considered, this was a pretty painless introduction to the language and a great first step.
+
+{% banner() %}
+<b>NOTE:</b> This series is all about me learning Rust, so if you happen to read this and discover that I have made some fatal error or have a fundamental misunderstanding of a concept, please feel more than welcome to correct me aggressively!
+{% end %}
 
 [1]: https://doc.rust-lang.org/book/ch02-00-guessing-game-tutorial.html
 [2]: https://doc.rust-lang.org/book/title-page.html
