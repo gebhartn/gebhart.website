@@ -128,7 +128,7 @@ fn get_length(s: &String) -> usize {
 }
 ```
 
-This has solved the problem of needingly to explicitly return ownership of the arguments our functions receive, but what about cases in which we want to mutate our value?
+This has solved the problem of needing to explicitly return ownership of the arguments our functions receive, but what about cases in which we want to mutate our value?
 
 Thinking back to the basics, all variables in Rust are immutable by default, so in order to mutate values we first need to explicitly notate that our initial value is mutable, in addition to notating that our function will be receiving a mutable reference to that data:
 
