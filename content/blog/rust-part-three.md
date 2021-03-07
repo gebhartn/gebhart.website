@@ -148,7 +148,7 @@ fn get_length(s: &mut String) -> usize {
 }
 ```
 
-Above, we have indicated that our variable `first_owner` is mutable using the `mut` keyword, and have likewise updated both the signature of our `get_length` function and the invokation itself to notate that we are passing a mutable reference via the `&mut` keyword.
+Above, we have indicated that our variable `first_owner` is mutable using the `mut` keyword, and have likewise updated both the signature of our `get_length` function and the invocation itself to notate that we are passing a mutable reference via the `&mut` keyword.
 
 This is quite a bit to take in, so I think it's a good stopping point for now. There are more rules to discuss involving mutable references and how Rust protects us from dangling pointers and data races which we will get into next time.
 
