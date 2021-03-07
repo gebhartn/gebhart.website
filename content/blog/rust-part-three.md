@@ -9,7 +9,7 @@ twitter = true
 
 Memory management in Rust is dictated by a set of three straightforward rules that have far-reaching implications for you as an engineer when it comes to the implementation of your solutions. Last time, we discussed the basics of these rules as they related to `String` types as well as their primitive `&str` or `string literal` counterparts.
 
-To recap, variables that are stack-allocated or have a fixed, known size at compile time are variable which "are Copy", meaning they can be cheaply copied by value. Heap-allocated data, by comparison, must be copied via the `.clone()` method if you are looking to assign a newvariable which owns that deeply copied data. Additionally, we touched on the idea of a `move` in Rust and how it compares to shallow copies from other languages. Today, we'll be taking a more in-depth look at copy and move as it applies to functions and their return values.
+To recap, variables that are stack-allocated, or have a fixed, known size at compile time are variables which "are Copy", meaning they can be cheaply copied by value. Heap-allocated data, by comparison, must be copied via the `.clone()` method if you are looking to assign a new variable which owns that deeply copied data. Additionally, we touched on the idea of a `move` in Rust and how it compares to shallow copies from other languages. Today, we'll be taking a more in-depth look at copy and move as it applies to functions and their return values.
 
 {% banner() %}
 This post is part of a series, you can check out part two <a href="/blog/rust-part-two/">here</a>.
